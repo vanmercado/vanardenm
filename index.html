@@ -6,14 +6,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>vanarden</title>
-
-		<!-- font  -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Titillium+Web:ital,wght@0,700;1,300&display=swap"
-			rel="stylesheet"
-		/>
 		<!-- Bootstrap  -->
 		<link
 			rel="stylesheet"
@@ -21,10 +13,20 @@
 			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
 			crossorigin="anonymous"
 		/>
+		<!-- fonts   -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@400;500;700&family=Patua+One&family=Permanent+Marker&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
-		<nav id="navbar" class="navbar w-100 pt-2 navbar-expand-md navbar-dark">
+		<nav
+			id="navbar"
+			class="navbar w-100 fixed-top navbar-expand-lg navbar-dark"
+		>
 			<!-- Toggler/collapsibe Button -->
 			<button
 				class="navbar-toggler bg-dark"
@@ -42,19 +44,23 @@
 			>
 				<ul class="navbar-nav text-center content">
 					<li class="nav-item">
-						<a class="nav-link text-dark font-weight-bold" href="#HOME">HOME</a>
+						<a class="font-weight-bold nav-link" id="links" href="#HOME"
+							>HOME</a
+						>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-dark font-weight-bold" href="#ABOUT"
+						<a class="font-weight-bold nav-link" id="links" href="#WORK"
+							>WORK</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="font-weight-bold nav-link" id="links" href="#ABOUT"
 							>ABOUT</a
 						>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link text-dark font-weight-bold" href="#WORK">WORK</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-dark font-weight-bold" href="#CONTACT"
+						<a class="font-weight-bold nav-link" id="links" href="#CONTACT"
 							>CONTACT</a
 						>
 					</li>
@@ -63,43 +69,378 @@
 		</nav>
 		<div class="portfolio">
 			<main>
-				<section class="home" id="HOME">
-					<div class="container">
-						<div class="col-md-4 col-lg-6 col-xl-6 name text-nowrap">
-							<img
-								class="hello-icon"
-								src="./image/icon/hello-icon.png"
-								alt="helllo icon"
-							/>
+				<section
+					class="home d-flex justify-content-center align-items-center"
+					id="HOME"
+				>
+					<div class="home-inner names container d-lg-flex d-xl-flex">
+						<div
+							class="
+								align-items-center
+								d-flex
+								col-lg-6 col-xl-6
+								text-nowrap
+								justify-content-center
+							"
+						>
+							<div class="text-nowrap">
+								<img
+									class="hello-icon"
+									src="./image/icon/hello-icon.png"
+									alt="helllo icon"
+								/>
 
-							<h2 class="im">
-								I'M<span class="fullname"> Van Arden S. Mercado</span>
-							</h2>
-							<h4 class="job-position">Full Stack Web Developer</h4>
-							<a
-								href="./CV_VanArdenS.Mercado.pdf"
-								class="btn btn-outline-dark mt-3"
-								download
-								>Download CV</a
-							>
+								<h2 class="name">
+									I'M<span class="fullname"> Van Arden S. Mercado</span>
+								</h2>
+								<h4 class="job-position">Full Stack Web Developer</h4>
+								<a
+									href="./CV_VanArdenS.Mercado.pdf"
+									class="btn btn-outline-info mt-3"
+									download
+									>Download CV</a
+								>
+							</div>
 						</div>
-						<div class="imahe">
+						<div class="imahe justify-content-center d-flex col-lg-6 col-xl-6">
 							<img src="./image/photo-van.png" alt="photo of me" />
 						</div>
 					</div>
+					<div
+						class="
+							icon-links
+							d-flex
+							flex-wrap
+							justify-content-center
+							align-items-center
+						"
+					>
+						<a href="https://mail.google.com/mail/" target="_blank">
+							<img
+								class="small-icon fade-in"
+								src="./image/icon/gmails.png"
+								alt="gmail small icon"
+							/>
+						</a>
+						<a href="https://github.com/vanmercado" target="_blank">
+							<img
+								class="small-icon"
+								src="./image/icon/githubs.png"
+								alt="github small icon"
+							/>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/van-mercado-782a37121/"
+							target="_blank"
+						>
+							<img
+								class="small-icon"
+								src="./image/icon/linkedin.png"
+								alt="linkedin small icon"
+							/>
+						</a>
+						<a href="https://www.facebook.com/vanarden" target="_blank">
+							<img
+								class="small-icon"
+								src="./image/icon/facebook.png"
+								alt="facebook small icon"
+							/>
+						</a>
+					</div>
 				</section>
-				<section class="about mt-5" id="ABOUT">
-					<div class="container col-10">
-						<div class="">
-							<div class="col-12 col-sm-12 col-xl-12 text-center about-left">
-								<h3 class="fade-in">A LITTLE BIT ABOUT ME</h3>
+
+				<section class="work" id="WORK">
+					<div class="line p-0">
+						<h6 class="title-work">WORKS</h6>
+						<h6 class="title-about">ABOUT</h6>
+					</div>
+					<div class="container">
+						<div
+							class="
+								p-3
+								pt-lg-5 pt-xl-5
+								d-flex
+								justify-content-center
+								flex-wrap
+								mt-2
+							"
+						>
+							<div
+								class="div-work wastem mt-5 mb-5 col-lg-8 col-xl-7"
+								data-toggle="modal"
+								data-target=".bd-wastem-modal-lg"
+							></div>
+							<div
+								class="div-work dish mb-5 col-lg-8 col-xl-7"
+								data-toggle="modal"
+								data-target=".bd-dish-modal-lg"
+							></div>
+							<div
+								class="border div-work rendez mb-5 col-lg-8 col-xl-7"
+								data-toggle="modal"
+								data-target=".bd-rendez-modal-lg"
+							></div>
+							<div
+								class="border div-work doggos mb-5 col-lg-8 col-xl-7"
+								data-toggle="modal"
+								data-target=".bd-doggos-modal-lg"
+							></div>
+							<!-- work1 modal  -->
+							<div
+								class="modal fade bd-wastem-modal-lg"
+								tabindex="-1"
+								role="dialog"
+								aria-labelledby="myLargeModalLabel"
+								aria-hidden="true"
+							>
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content text-left p-5">
+										<button
+											type="button"
+											class="close text-right"
+											data-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<p>Project</p>
+										<h2>SOLID WASTE MANAGEMENT</h2>
+										<p>About</p>
+										<p>
+											RA 9003: Ecological Solid Waste Management Act of 2000.
+											Our Waste, Our Resposibility.
+										</p>
+										<p>Tools</p>
+										<ul class="pl-5">
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>JavaScript</li>
+											<li>Bootstrap</li>
+											<li>React</li>
+											<li>Redux</li>
+											<li>CRUD Operation</li>
+											<li>Express</li>
+											<li>MongoDB</li>
+										</ul>
+										<p>Features:</p>
+										<p>For Waste Disposer</p>
+										<ul class="pl-5">
+											<li>Register / Sign-in</li>
+											<li>
+												Post an Event where they need a recycler to collect
+											</li>
+										</ul>
+										<p>For Recycler</p>
+										<ul class="pl-5">
+											<li>Register / Sign-in</li>
+											<li>Claim to collect the waste posted by disposers</li>
+										</ul>
+										<a
+											class="text-decoration-none text-light"
+											href="https://vanmercado.github.io/wastemanagement/"
+											target="_blank"
+										>
+											<button class="btn btn-info col-2">LIVE</button>
+										</a>
+										<hr />
+										<img src="./image/screen/wasteOne.png" alt="" />
+										<hr />
+										<hr />
+										<img src="./image/screen/wasteTwo.png" alt="" />
+										<hr />
+										<hr />
+										<img src="./image/screen/wasteThree.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- work1  -->
+							<!-- work2 modal  -->
+							<div
+								class="modal fade bd-dish-modal-lg"
+								tabindex="-1"
+								role="dialog"
+								aria-labelledby="myLargeModalLabel"
+								aria-hidden="true"
+							>
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content text-left p-5">
+										<button
+											type="button"
+											class="close text-right"
+											data-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<p>Project</p>
+										<h2>FILIPINO CUISINE</h2>
+										<p>About</p>
+										<p>A Selection of Best Filipino Dishes...</p>
+										<p>Tools</p>
+										<ul class="pl-5">
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>JavaScript</li>
+											<li>Bootstrap</li>
+										</ul>
+										<p>Features</p>
+										<ul class="pl-5">
+											<li>Add Favorite Pinoy Dishes</li>
+											<li>Select and Rank added food</li>
+											<li>Mobile Responsive</li>
+										</ul>
+										<a
+											class="text-decoration-none text-light"
+											href="https://vanmercado.github.io/pinoy_food/"
+											target="_blank"
+										>
+											<button class="btn btn-info col-2">LIVE</button>
+										</a>
+										<hr />
+										<img src="./image/screen/pinoydish.png" alt="" />
+										<hr />
+										<hr />
+										<img src="./image/screen/addpinoydish.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- work2  -->
+							<!-- work3 modal  -->
+							<div
+								class="modal fade bd-rendez-modal-lg"
+								tabindex="-1"
+								role="dialog"
+								aria-labelledby="myLargeModalLabel"
+								aria-hidden="true"
+							>
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content text-left p-5">
+										<button
+											type="button"
+											class="close text-right"
+											data-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<p>Project</p>
+										<h2>RENDEZVOUS</h2>
+										<p>About</p>
+										<p>
+											Rendezvous is a food blogging/social network web
+											application...
+										</p>
+										<p>Tools</p>
+										<ul class="pl-5">
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>JavaScript</li>
+											<li>Bootstrap</li>
+											<li>React</li>
+											<li>Redux</li>
+											<li>CRUD Operation</li>
+											<li>Express</li>
+											<li>MongoDB</li>
+										</ul>
+										<p>User Features</p>
+										<ul class="pl-5">
+											<li>Register / Sign-in</li>
+											<li>Add/Edit/Delete Restaurant Favorites</li>
+											<li>View Restaurant by category</li>
+											<li>Search for Restaurant and other Users</li>
+											<li>Update User Profile</li>
+										</ul>
+										<p>Admin Features</p>
+										<ul class="pl-5">
+											<li>Add/Delete Restaurant</li>
+											<li>Edit Restaurant details</li>
+										</ul>
+										<a
+											class="text-decoration-none text-light"
+											href="https://vanmercado.github.io/rendezvous/"
+											target="_blank"
+										>
+											<button class="btn btn-info col-2">LIVE</button>
+										</a>
+										<hr />
+										<img src="./image/work/rendezvous.png" alt="" />
+										<hr />
+										<hr />
+										<img src="./image/screen/rendezTwo.png" alt="" />
+										<hr />
+										<hr />
+										<img src="./image/screen/rendezOne.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- work3  -->
+							<!-- work4 modal  -->
+							<div
+								class="modal fade bd-doggos-modal-lg"
+								tabindex="-1"
+								role="dialog"
+								aria-labelledby="myLargeModalLabel"
+								aria-hidden="true"
+							>
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content text-left p-5">
+										<button
+											type="button"
+											class="close text-right"
+											data-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<p>Project</p>
+										<h2>MY DOGGOS</h2>
+										<p>About</p>
+										<p>
+											My Doggos is a blog I made for my pet dogs, this blog
+											shows that sometimes...
+										</p>
+										<p>Tools</p>
+										<ul class="pl-5">
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>JavaScript</li>
+											<li>Bootstrap</li>
+											<li>jQuery</li>
+										</ul>
+										<p>Features</p>
+										<ul class="pl-5">
+											<li>Mobile Responsive</li>
+										</ul>
+										<a
+											class="text-decoration-none text-light"
+											href="https://vanmercado.github.io/my_doggos/"
+											target="_blank"
+										>
+											<button class="btn btn-info col-2">LIVE</button>
+										</a>
+										<hr />
+										<img src="./image/screen/doggosOne.png" alt="" />
+										<hr />
+										<hr />
+										<img src="./image/screen/doggosTwo.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- work4  -->
+						</div>
+					</div>
+				</section>
+				<div id="ABOUT"></div>
+				<section class="about bg-light">
+					<div class="container d-lg-flex d-xl-flex div-about-inner mb-5">
+						<div class="p-0 col-xl-7 col-lg-7 mb-5 mt-5">
+							<div class="col-12 p-0 text-center about-left">
+								<h3 class="fade-in about-title">A LITTLE BIT ABOUT ME</h3>
 							</div>
 
-							<div
-								class="about-me col-sm-12 col-md-12 offset-xl-2 pt-2 col-xl-8"
-							>
+							<div>
 								<div class="">
-									<p class="fade-in">
+									<p class="fade-in about-p">
 										Hi I am a web developer. I believe working in a
 										multi-disciplined approach brings creative inspiration to my
 										work. I am passionate about creating websites and web apps
@@ -107,31 +448,29 @@
 										I love experimenting with new backend technologies, with the
 										aim to improve productivity, quality, performance and speed.
 										<br />
-									</p>
-
-									<p class="fade-in">
+										<br />
 										Here are a few technologies I've been learning with
 										recently:
 									</p>
 								</div>
 
-								<ul class="arrow">
-									<li class="fade-in">HTML & CSS</li>
-									<li class="fade-in">JavaScript</li>
-									<li class="fade-in">Bootstrap</li>
-									<li class="fade-in">React</li>
-									<li class="fade-in">Express</li>
-									<li class="fade-in">Node.js</li>
-									<li class="fade-in">MongoDB</li>
+								<ul class="arrow fade-in">
+									<li class="">HTML & CSS</li>
+									<li class="">JavaScript</li>
+									<li class="">Bootstrap</li>
+									<li class="">React</li>
+									<li class="">Express</li>
+									<li class="">Node.js</li>
+									<li class="">MongoDB</li>
 								</ul>
 							</div>
 						</div>
 
-						<!-- Carousel  -->
-						<div class="container div-carousel">
+						<!-- carousel  -->
+						<div class="container div-carousel col-xl-5 p-5">
 							<div
 								id="carouselExampleCaptions"
-								class="carousel slide fade-in"
+								class="carousel slide mt-lg-4 mt-xl-4"
 								data-ride="carousel"
 							>
 								<ol class="carousel-indicators">
@@ -165,7 +504,7 @@
 											alt="First slide"
 										/>
 										<div class="carousel-caption d-none d-md-block">
-											<h4 class="">I LOVE DOGS</h4>
+											<h3 class="text-danger">I LOVE DOGS</h3>
 										</div>
 									</div>
 									<div class="carousel-item">
@@ -175,7 +514,7 @@
 											alt="Second slide"
 										/>
 										<div class="carousel-caption d-none d-md-block">
-											<h4 class="">I LOVE TRAVELING</h4>
+											<h3 class="text-danger">I LOVE TRAVELING</h3>
 										</div>
 									</div>
 									<div class="carousel-item">
@@ -185,7 +524,7 @@
 											alt="Third slide"
 										/>
 										<div class="carousel-caption d-none d-md-block">
-											<h4 class="">I LOVE CAMPING</h4>
+											<h3 class="text-danger">I LOVE CAMPING</h3>
 										</div>
 									</div>
 
@@ -196,7 +535,7 @@
 											alt="Four slide"
 										/>
 										<div class="carousel-caption d-none d-md-block">
-											<h4 class="">I LOVE LEGO</h4>
+											<h3 class="text-dark">I LOVE LEGO</h3>
 										</div>
 									</div>
 									<div class="carousel-item">
@@ -206,7 +545,7 @@
 											alt="Five slide"
 										/>
 										<div class="carousel-caption d-none d-md-block">
-											<h4>I LOVE RUNNING</h4>
+											<h3 class="text-danger">I LOVE RUNNING</h3>
 										</div>
 									</div>
 								</div>
@@ -217,10 +556,10 @@
 									data-slide="prev"
 								>
 									<span
-										class="carousel-control-prev-icon"
+										class="carousel-control-prev-icon bg-danger"
 										aria-hidden="true"
 									></span>
-									<span class="sr-only">Previous</span>
+									<span class="sr-only text-danger">Previous</span>
 								</a>
 								<a
 									class="carousel-control-next"
@@ -229,7 +568,7 @@
 									data-slide="next"
 								>
 									<span
-										class="carousel-control-next-icon"
+										class="carousel-control-next-icon bg-danger"
 										aria-hidden="true"
 									></span>
 									<span class="sr-only">Next</span>
@@ -239,253 +578,45 @@
 						<!-- End Carousel  -->
 					</div>
 				</section>
-				<section class="pt-5 pl-3 pr-3 pb-5 text-center mt-5" id="WORK">
-					<div
-						class="
-							col-12
-							container
-							d-xl-block d-lg-block d-md-block d-sm-block
-							mt-5
-						"
-					>
-						<div class="text-center mt-5">
-							<h3><b>WORK</b></h3>
-							<p>gonna fill this up as i continue learning</p>
+				<!-- footer  -->
+				<section
+					class="footer d-flex justify-content-center align-items-center"
+					id="CONTACT"
+				>
+					<div class="container text-center col-xl-5">
+						<div class="mb-4">
+							<h2 class="footer-hello">SAY HELLO!</h2>
+							<h6 class="footer-msg">
+								Hello! If a piqued your interest, feel free to email me:
+							</h6>
+							<h6 class="footer-mail">vanardenmercado@gmail.com</h6>
 						</div>
-						<div
-							class="
-								container-fluid
-								d-sm-block d-md-block d-lg-block d-xl-flex
-								mb-sm-5
-								justify-content-center
-								div-work
-							"
-						>
-							<div
-								class="work1 m-sm-1 m-lg-3 m-md-2 mb-md-4 m-xl-3 btn"
-								data-toggle="modal"
-								data-target=".bd-doggos-modal-lg"
-							></div>
-							<div
-								class="work2 m-sm-1 m-lg-3 m-md-2 mb-md-4 m-xl-3 btn"
-								data-toggle="modal"
-								data-target=".bd-resto-modal-lg"
-							></div>
-							<div
-								class="work3 m-sm-1 m-lg-3 m-md-2 mb-md-4 m-xl-3 btn"
-								data-toggle="modal"
-								data-target=".bd-rendez-modal-lg"
-							></div>
+						<div class="d-flex justify-content-around">
+							<a
+								href="https://mail.google.com/mail/"
+								target="_blank"
+								class="text-light"
+								>GMAIL</a
+							>
+							<a
+								href="https://www.linkedin.com/in/van-mercado-782a37121/"
+								target="_blank"
+								class="text-light"
+								>LINKEDIN</a
+							>
+							<a
+								href="https://www.facebook.com/vanarden"
+								target="_blank"
+								class="text-light"
+								>FACEBOOK</a
+							>
+							<a
+								href="https://github.com/vanmercado"
+								target="_blank"
+								class="text-light"
+								>GITHUB</a
+							>
 						</div>
-						<!-- work1 modal  -->
-						<div
-							class="modal fade bd-doggos-modal-lg"
-							tabindex="-1"
-							role="dialog"
-							aria-labelledby="myLargeModalLabel"
-							aria-hidden="true"
-						>
-							<div class="modal-dialog modal-lg">
-								<div class="modal-content text-left p-5">
-									<button
-										type="button"
-										class="close text-right"
-										data-dismiss="modal"
-										aria-label="Close"
-									>
-										<span aria-hidden="true">&times;</span>
-									</button>
-									<p>Project</p>
-									<h2>MY DOGGOS</h2>
-									<p>About</p>
-									<p>
-										My Doggos is a blog I made for my pet dogs, this blog shows
-										that sometimes...
-									</p>
-									<p>Tools</p>
-									<ul class="pl-5">
-										<li>HTML</li>
-										<li>CSS</li>
-										<li>JavaScript</li>
-										<li>Bootstrap</li>
-										<li>jQuery</li>
-									</ul>
-									<p>Features</p>
-									<ul class="pl-5">
-										<li>Mobile Responsive</li>
-									</ul>
-									<button class="btn btn-info col-2">
-										<a
-											class="text-decoration-none text-light"
-											href="https://vanmercado.github.io/my_doggos/"
-											target="_blank"
-										>
-											LIVE
-										</a>
-									</button>
-									<hr />
-									<img src="./image/screen/doggosOne.png" alt="" />
-									<hr />
-									<hr />
-									<img src="./image/screen/doggosTwo.png" alt="" />
-								</div>
-							</div>
-						</div>
-						<!-- work1  -->
-						<!-- work2 modal  -->
-						<div
-							class="modal fade bd-resto-modal-lg"
-							tabindex="-1"
-							role="dialog"
-							aria-labelledby="myLargeModalLabel"
-							aria-hidden="true"
-						>
-							<div class="modal-dialog modal-lg">
-								<div class="modal-content text-left p-5">
-									<button
-										type="button"
-										class="close text-right"
-										data-dismiss="modal"
-										aria-label="Close"
-									>
-										<span aria-hidden="true">&times;</span>
-									</button>
-									<p>Project</p>
-									<h2>Van's Resto App</h2>
-									<p>About</p>
-									<p>Van's Resto Apps is an ecommerce website...</p>
-									<p>Tools</p>
-									<ul class="pl-5">
-										<li>HTML</li>
-										<li>CSS</li>
-										<li>JavaScript</li>
-										<li>Bootstrap</li>
-										<li>React</li>
-										<li>Redux</li>
-									</ul>
-									<p>Features</p>
-									<ul class="pl-5">
-										<li>View product by Category</li>
-										<li>Add / Edit Cart Contents</li>
-										<li>Create / Edit Item Contents</li>
-										<li>View Gallery</li>
-									</ul>
-									<button class="btn btn-info col-2">
-										<a
-											class="text-decoration-none text-light"
-											href="https://vanmercado.github.io/resto-app/"
-											target="_blank"
-										>
-											LIVE
-										</a>
-									</button>
-									<hr />
-									<img src="./image/work/restoapp.png" alt="" />
-									<hr />
-									<hr />
-									<img src="./image/screen/restoOne.png" alt="" />
-									<hr />
-									<hr />
-									<img src="./image/screen/restoTwo.png" alt="" />
-								</div>
-							</div>
-						</div>
-						<!-- work2  -->
-						<!-- work3 modal  -->
-						<div
-							class="modal fade bd-rendez-modal-lg"
-							tabindex="-1"
-							role="dialog"
-							aria-labelledby="myLargeModalLabel"
-							aria-hidden="true"
-						>
-							<div class="modal-dialog modal-lg">
-								<div class="modal-content text-left p-5">
-									<button
-										type="button"
-										class="close text-right"
-										data-dismiss="modal"
-										aria-label="Close"
-									>
-										<span aria-hidden="true">&times;</span>
-									</button>
-									<p>Project</p>
-									<h2>RENDEZVOUS</h2>
-									<p>About</p>
-									<p>
-										Rendezvous is a food blogging/social network web
-										application...
-									</p>
-									<p>Tools</p>
-									<ul class="pl-5">
-										<li>HTML</li>
-										<li>CSS</li>
-										<li>JavaScript</li>
-										<li>Bootstrap</li>
-										<li>React</li>
-										<li>Redux</li>
-										<li>CRUD Operation</li>
-										<li>Express</li>
-										<li>MongoDB</li>
-									</ul>
-									<p>User Features</p>
-									<ul class="pl-5">
-										<li>Register / Sign-in</li>
-										<li>Add/Edit/Delete Restaurant Favorites</li>
-										<li>View Restaurant by category</li>
-										<li>Search for Restaurant and other Users</li>
-										<li>Update User Profile</li>
-									</ul>
-									<p>Admin Features</p>
-									<ul class="pl-5">
-										<li>Add/Delete Restaurant</li>
-										<li>Edit Restaurant details</li>
-									</ul>
-									<button class="btn btn-info col-2">
-										<a
-											class="text-decoration-none text-light"
-											href="https://vanmercado.github.io/rendezvous/"
-											target="_blank"
-										>
-											LIVE
-										</a>
-									</button>
-									<hr />
-									<img src="./image/work/rendezvous.png" alt="" />
-									<hr />
-									<hr />
-									<img src="./image/screen/rendezTwo.png" alt="" />
-									<hr />
-									<hr />
-									<img src="./image/screen/rendezOne.png" alt="" />
-								</div>
-							</div>
-						</div>
-						<!-- work3  -->
-					</div>
-				</section>
-				<section id="CONTACT" class="text-center">
-					<h2><b>Say Hello!</b></h2>
-					<h3>Hello! If a piqued your interest, feel free to email me:</h3>
-					<h3>vanardenmercado@gmail.com</h3>
-					<div>
-						<a href="https://github.com/vanmercado" target="_blank">
-							<img
-								class="icon"
-								src="./image/icon/github.png"
-								alt="github icon"
-							/>
-						</a>
-						<a href="https://gitlab.com/vanmercado" target="_blank">
-							<img
-								class="icon"
-								src="./image/icon/gitlab.png"
-								alt="gitlab icon"
-							/>
-						</a>
-						<a href="#">
-							<img class="icon" src="./image/icon/gmail.png" alt="gmail icon" />
-						</a>
 					</div>
 				</section>
 			</main>
@@ -506,6 +637,6 @@
 			integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
 			crossorigin="anonymous"
 		></script>
-		<script src="./App.js"></script>
+		<script src="./app.js"></script>
 	</body>
 </html>
