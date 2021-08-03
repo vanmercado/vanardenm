@@ -5,6 +5,7 @@
 		<link rel="icon" href="./image/icon/favicon.ico?v=2" type="image/x-icon" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>vanarden</title>
 		<!-- Bootstrap  -->
 		<link
@@ -25,7 +26,14 @@
 	<body>
 		<nav
 			id="navbar"
-			class="navbar w-100 fixed-top navbar-expand-lg navbar-dark"
+			class="
+				navbar
+				w-100
+				fixed-top
+				navbar-expand-lg navbar-dark
+				d-flex
+				justify-content-end
+			"
 		>
 			<!-- Toggler/collapsibe Button -->
 			<button
@@ -83,27 +91,31 @@
 								justify-content-center
 							"
 						>
-							<div class="text-nowrap">
+							<div class="text-nowrap div-name">
 								<img
 									class="hello-icon"
 									src="./image/icon/hello-icon.png"
 									alt="helllo icon"
 								/>
 
-								<h2 class="name">
+								<p class="name">
 									I'M<span class="fullname"> Van Arden S. Mercado</span>
-								</h2>
-								<h4 class="job-position">Full Stack Web Developer</h4>
+								</p>
+								<p class="job-position">Full Stack Web Developer</p>
 								<a
 									href="./CV_VanArdenS.Mercado.pdf"
-									class="btn btn-outline-info mt-3"
+									class="btn btn-sm btn-outline-info"
 									download
 									>Download CV</a
 								>
 							</div>
 						</div>
 						<div class="imahe justify-content-center d-flex col-lg-6 col-xl-6">
-							<img src="./image/photo-van.png" alt="photo of me" />
+							<img
+								id="main-image"
+								src="./image/photo-van.png"
+								alt="photo of me"
+							/>
 						</div>
 					</div>
 					<div
@@ -439,7 +451,7 @@
 							</div>
 
 							<div>
-								<div class="">
+								<div>
 									<p class="fade-in about-p">
 										Hi I am a web developer. I believe working in a
 										multi-disciplined approach brings creative inspiration to my

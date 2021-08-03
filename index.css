@@ -13,6 +13,7 @@ font-family: 'Permanent Marker', cursive; */
 body {
 	line-height: 1.6;
 	height: 100vh;
+	padding: 0;
 	overflow: hidden;
 }
 /* NAVBAR  */
@@ -21,6 +22,9 @@ body {
 	margin: 0 10px;
 	letter-spacing: 2px;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+.wrapper {
+	overflow: hidden;
 }
 #links {
 	color: #77181b;
@@ -72,9 +76,20 @@ body {
 	color: white;
 	position: relative;
 }
-
+.div-name {
+	line-height: 20px;
+}
+.name {
+	font-size: 25px;
+}
+.job-position {
+	font-size: 15px;
+}
 .hello-icon {
 	width: 70px;
+}
+#main-image {
+	width: 300px;
 }
 .icon-links {
 	position: absolute;
@@ -92,7 +107,6 @@ body {
 }
 .name {
 	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 30px;
 	color: rgb(159, 158, 158);
 }
 .imahe img {
@@ -127,7 +141,6 @@ body {
 }
 .job-position {
 	font-family: 'Courgette', cursive;
-	font-size: 18px;
 	color: rgba(255, 255, 255, 0.891);
 }
 .work {
@@ -164,6 +177,7 @@ body {
 	height: 325px;
 	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.292);
 }
+
 .wastem {
 	background-image: url(./image/screen/wastemanagement.png);
 	background-position: center;
@@ -197,6 +211,7 @@ body {
 /* about  */
 .about {
 	height: max-content;
+	padding: 3%;
 }
 .div-about-inner {
 	margin-top: 130px;
@@ -245,8 +260,20 @@ body {
 	.home {
 		height: 110vh;
 	}
-	.home-inner {
-		margin-top: 20px;
+	.div-name {
+		line-height: 20px;
+	}
+	.name {
+		font-size: 20px;
+	}
+	.job-position {
+		font-size: 15px;
+	}
+	.hello-icon {
+		width: 70px;
+	}
+	#main-image {
+		width: 300px;
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -255,6 +282,21 @@ body {
 	}
 	.home-inner {
 		margin-top: 10px;
+	}
+	.div-name {
+		line-height: 30px;
+	}
+	.name {
+		font-size: 45px;
+	}
+	.job-position {
+		font-size: 15px;
+	}
+	.hello-icon {
+		width: 70px;
+	}
+	#main-image {
+		width: 400px;
 	}
 }
 @media only screen and (min-width: 992px) {
@@ -265,10 +307,22 @@ body {
 		margin-top: 0px;
 	}
 	.name {
-		font-size: 40px;
+		font-size: 35px;
 	}
 }
 @media only screen and (min-width: 1200px) {
+	.div-name {
+		line-height: 30px;
+	}
+	.name {
+		font-size: 40px;
+	}
+	.job-position {
+		font-size: 20px;
+	}
+	.hello-icon {
+		width: 100px;
+	}
 	.wastem,
 	.rendez {
 		margin-right: 140px;
