@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>vanarden</title>
+		    <!-- gsap -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
 		<!-- Bootstrap  -->
 		<link
 			rel="stylesheet"
@@ -30,7 +32,8 @@
 				navbar
 				w-100
 				fixed-top
-				navbar-expand-lg navbar-dark
+				navbar-expand-lg 
+				navbar-dark
 				d-flex
 				justify-content-end
 			"
@@ -47,17 +50,17 @@
 
 			<!-- Navbar links -->
 			<div
-				class="collapse navbar-collapse justify-content-around wrapper"
+				class="collapse navbar-collapse justify-content-around pb-4 wrapper"
 				id="collapsibleNavbar"
 			>
-				<ul class="navbar-nav text-center content">
+				<ul class="navbar-nav text-center content mt-lg-2 mt-xl-2 shadow rounded">
 					<li class="nav-item">
 						<a class="font-weight-bold nav-link" id="links" href="#HOME"
 							>HOME</a
 						>
 					</li>
 					<li class="nav-item">
-						<a class="font-weight-bold nav-link" id="links" href="#WORK"
+						<a class="font-weight-bold nav-link " id="links" href="#WORK"
 							>WORK</a
 						>
 					</li>
@@ -72,6 +75,7 @@
 							>CONTACT</a
 						>
 					</li>
+				
 				</ul>
 			</div>
 		</nav>
@@ -92,29 +96,26 @@
 							"
 						>
 							<div class="text-nowrap div-name">
-								<img
-									class="hello-icon"
-									src="./image/icon/hello-icon.png"
-									alt="helllo icon"
-								/>
-
+								<p class="job-position">Application Developer</p>
 								<p class="name">
-									I'M<span class="fullname"> Van Arden S. Mercado</span>
+									Van Arden S. Mercado
 								</p>
-								<p class="job-position">Full Stack Web Developer</p>
+	
 								<a
 									href="./VanArdenMercadoCV.pdf"
-									class="btn btn-sm btn-outline-info"
+									class="btn btn-sm btn-danger mt-2"
+								
 									download
-									>Download CV</a
+									><img src="./image/icon/downloads.png" class="downloadicon"
+									alt="download icon"></img>
+									Download CV</a
 									>
-									<!-- href="./CV_Van_Arden_S._Mercado.pdf"  -->
-							</div>
+								</div>
 						</div>
-						<div class="imahe justify-content-center d-flex col-lg-6 col-xl-6">
+						<div class="imahe justify-content-center d-flex col-lg-6 col-xl-8">
 							<img
-								id="main-image"
-								src="./image/photo-van.png"
+							id="main-image"
+							 src="./image/photo-van.png"
 								alt="photo of me"
 							/>
 						</div>
@@ -125,7 +126,7 @@
 							d-flex
 							flex-wrap
 							justify-content-center
-							align-items-center
+							align-items-center 
 						"
 					>
 						<a href="https://mail.google.com/mail/" target="_blank">
@@ -152,20 +153,26 @@
 								alt="linkedin small icon"
 							/>
 						</a>
-						<a href="https://www.facebook.com/vanarden" target="_blank">
-							<img
-								class="small-icon"
-								src="./image/icon/facebook.png"
-								alt="facebook small icon"
-							/>
-						</a>
 					</div>
 				</section>
 
 				<section class="work" id="WORK">
-					<div class="line p-0">
-						<h6 class="title-work">WORKS</h6>
-						<h6 class="title-about">ABOUT</h6>
+					<div class="line p-0 ">
+						<div class="title-work work-wavy">
+							<span style="--i:1;">W</span>
+							<span style="--i:2;">O</span>
+							<span style="--i:3;">R</span>
+							<span style="--i:4;">K</span>
+							<span style="--i:5;">S</span>
+						</div>
+						<!-- <h6 class="title-about">ABOUT</h6> -->
+						<div class="title-about about-wavy">
+							<span style="--i:1;">A</span>
+							<span style="--i:2;">B</span>
+							<span style="--i:3;">O</span>
+							<span style="--i:4;">U</span>
+							<span style="--i:5;">T</span>
+						</div>
 					</div>
 					<div class="container">
 						<div
@@ -441,48 +448,70 @@
 							</div>
 							<!-- work4  -->
 						</div>
-					</div>
-				</section>
+					</div>			
+				</section>	
 				<div id="ABOUT"></div>
 				<section class="about bg-light">
 					<div class="container d-lg-flex d-xl-flex div-about-inner mb-5">
-						<div class="p-0 col-xl-7 col-lg-7 mb-5 mt-5">
+						<div class="p-0 col-xl-7 col-lg-7 mb-5">
 							<div class="col-12 p-0 text-center about-left">
 								<h3 class="fade-in about-title">A LITTLE BIT ABOUT ME</h3>
 							</div>
-
 							<div>
 								<div>
 									<p class="fade-in about-p">
 										Hi, I am a web developer. I believe working with a multi-disciplined approach brings creative inspiration to my work. I am passionate about creating websites and web apps that incorporate interactive design and modern technologies. I love experimenting with codes with the aim of improving productivity, quality, performance, and speed.
 										<br />
 										<br />
-										Here are a few technologies I've been learning with
-										recently:
+										Here are some technologies I've experienced and have been studying recently.
 									</p>
 								</div>
-
-								<ul class="arrow fade-in">
-									<li class="">HTML</li>
-									<li class="">CSS</li>
-									<li class="">JavaScript</li>
-									<li class="">React</li>
-									<li class="">Material UI</li>
-									<li class="">Thymeleaf</li>
-									<li class="">Bootstrap</li>
-									<li class="">Node.js</li>
-									<li class="">Express</li>
-									<li class="">Java</li>
-									<li class="">MySQL</li>
-								</ul>
+								<div class="d-flex justify-content-center flex-wrap mt-5">
+									<div class="fade-in col-4 text-center mb-4">
+										<img src="./image/tools/html.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4">
+										<img src="./image/tools/css.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4">
+										<img src="./image/tools/JavaScript-logo.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in  col-4 text-center mb-4">
+										<img src="./image/tools/bootstrap.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4">
+										<img src="./image/tools/materialui.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4 ">
+										<img src="./image/tools/thymeleaf.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4 ">
+										<img src="./image/tools/react.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4">
+										<img src="./image/tools/nodejsexpress.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4">
+										<img src="./image/tools/mysql.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4 ">
+										<img src="./image/tools/java.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4 ">
+										<img src="./image/tools/springboot.png" class="tools-img " alt="html logo">
+									</div>
+									<div class="fade-in col-4 text-center mb-4 ">
+										<img src="./image/tools/gcp.png" class="tools-img " alt="html logo">
+									</div>
+								</div>													
 							</div>
 						</div>
 
 						<!-- carousel  -->
-						<div class="container div-carousel col-xl-5 p-5">
+						<div class="container div-carousel col-xl-5 p-5 d-flex justify-content-center">
 							<div
 								id="carouselExampleCaptions"
-								class="carousel slide mt-lg-4 mt-xl-4"
+								class="carousel slide d-flex align-items-center"
 								data-ride="carousel"
 							>
 								<ol class="carousel-indicators">
@@ -506,6 +535,10 @@
 									<li
 										data-target="#carouselExampleCaptions"
 										data-slide-to="4"
+									></li>
+									<li
+										data-target="#carouselExampleCaptions"
+										data-slide-to="5"
 									></li>
 								</ol>
 								<div class="carousel-inner" role="listbox">
@@ -542,22 +575,32 @@
 
 									<div class="carousel-item">
 										<img
-											class="d-block w-100 border-0"
-											src="./image/icon/lego.png"
-											alt="Four slide"
+										class="d-block w-100 border-0"
+										src="./image/icon/running.png"
+										alt="Five slide"
 										/>
 										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-dark">I LOVE LEGO</h3>
+											<h3 class="text-danger">I LOVE RUNNING</h3>
 										</div>
 									</div>
 									<div class="carousel-item">
 										<img
 											class="d-block w-100 border-0"
-											src="./image/icon/running.png"
-											alt="Five slide"
+											src="./image/icon/mtb.png"
+											alt="Four slide"
 										/>
 										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-danger">I LOVE RUNNING</h3>
+											<h3 class="text-danger">I LOVE MTB</h3>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img
+											class="d-block w-100 border-0"
+											src="./image/icon/spartan.png"
+											alt="Four slide"
+										/>
+										<div class="carousel-caption d-none d-md-block">
+											<h3 class="text-danger">I LOVE SPARTAN</h3>
 										</div>
 									</div>
 								</div>
@@ -596,8 +639,7 @@
 					id="CONTACT"
 				>
 					<div class="container text-center col-xl-5">
-						<div class="mb-4">
-							<h2 class="footer-hello">SAY HELLO!</h2>
+						<div class="mb-5">
 							<h6 class="footer-msg">
 								Hello! If a piqued your interest, feel free to email me:
 							</h6>
@@ -615,12 +657,6 @@
 								target="_blank"
 								class="text-light"
 								>LINKEDIN</a
-							>
-							<a
-								href="https://www.facebook.com/vanarden"
-								target="_blank"
-								class="text-light"
-								>FACEBOOK</a
 							>
 							<a
 								href="https://github.com/vanmercado"
