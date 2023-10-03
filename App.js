@@ -32,3 +32,4 @@ TweenMax.staggerFrom(".small-icon", 2, {
     y: 40,
     ease: Expo.easeInOut
 }, 0.2)
+
