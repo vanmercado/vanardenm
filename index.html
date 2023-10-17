@@ -1,879 +1,1354 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" href="./image/icon/favicon.ico?v=2" type="image/x-icon" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta char="UTF-8" />
+    <link rel="icon" href="./image/icon/favicon.ico?v=2" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vanarden</title>
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Autour+One&family=Goblin+One&family=Orelega+One&family=Poppins:wght@200;300;400;500;700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css  -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="Home">
+      <div class="container">
+        <div></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul
+            class="navlinks navbar-nav me-auto mb-2 mb-lg-0 offset-lg-9 offset-xl-10 text-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <main>
+        <!-- Home  -->
+        <section class="home" id="Home">
+          <div class="container d-lg-flex d-xl-flex">
+            <div
+              class="names d-flex align-items-center justify-content-center mb-4 col-lg-6 col-xl-7"
+            >
+              <div class="home-name">
+                <p class="jobposition">Application Developer</p>
+                <p class="myname">Van Arden S. Mercado</p>
 
-		<title>vanarden</title>
-		<!-- Bootstrap  -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-			crossorigin="anonymous"
-		/>
-		<!-- fonts   -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@400;500;700&family=Patua+One&family=Permanent+Marker&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="index.css" />
-	</head>
-	<body>
-		<nav
-			id="navbar"
-			class="
-				navbar
-				w-100
-				fixed-top
-				navbar-expand-lg 
-				navbar-dark
-				d-flex
-				justify-content-end
-			"
-		>
-			<!-- Toggler/collapsibe Button -->
-			<button
-				class="navbar-toggler bg-dark"
-				type="button"
-				data-toggle="collapse"
-				data-target="#collapsibleNavbar"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
+                <a
+                  href="./VanArdenMercadoCV.pdf"
+                  class="btn btn-sm btn-danger mt-2"
+                  download
+                  ><img
+                    src="./image/icon/downloads.png"
+                    class="downloadicon"
+                    alt="download icon"
+                  />
+                  Download CV</a
+                >
+              </div>
+            </div>
+            <div class="myimage col-lg-6 col-xl-5">
+              <img id="myphoto" src="./image/photo-van.png" alt="photo of me" />
+            </div>
+          </div>
+          <div
+            class="icon-links d-flex flex-wrap justify-content-center align-items-center"
+          >
+            <a href="https://mail.google.com/mail/" target="_blank">
+              <img
+                class="small-icon"
+                src="./image/icon/gmails.png"
+                alt="gmail small icon"
+              />
+            </a>
+            <a href="https://github.com/vanmercado" target="_blank">
+              <img
+                class="small-icon"
+                src="./image/icon/githubs.png"
+                alt="github small icon"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/van-mercado-782a37121/"
+              target="_blank"
+            >
+              <img
+                class="small-icon"
+                src="./image/icon/linkedin.png"
+                alt="linkedin small icon"
+              />
+            </a>
+          </div>
+        </section>
+        <!-- End Home  -->
+        <!-- Work  -->
+        <section class="work" id="Work">
+          <div class="container text-center col-lg-9 work-inner">
+            <div class="container col-11">
+              <p class="work-title">
+                Some of my featured <span>projects</span>
+              </p>
+              <div class="d-flex justify-content-center">
+                <p class="work-msg col-10">
+                  The following projects are the ones I did from the time I was
+                  a student until I got an occupation. I have created
+                  applications using a variety of programming languages.
+                </p>
+              </div>
+            </div>
+            <div class="container box-container">
+              <!-- work  1-->
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#skillsmatrix"
+              >
+                <div class="card-inner">
+                  <div class="img-card">
+                    <img
+                      src="image/work/skillsmatrix.png"
+                      class="card-img-top"
+                      alt="Skills Matrix Wallpaper"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="">Read +</span>
+                  <p class="card-text text-start"><b>Skills Matrix</b></p>
+                </div>
+              </div>
+              <!-- end work  1-->
+              <!-- work  2-->
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#careercity"
+              >
+                <div class="card-inner">
+                  <div class="img-card">
+                    <img
+                      src="image/work/careercity.png"
+                      class="card-img-top"
+                      alt="Career City Wallpaper"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="">Read +</span>
+                  <p class="card-text text-start"><b>Career City</b></p>
+                </div>
+              </div>
+              <!-- end work  2-->
+              <!-- work  3-->
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#springboot"
+              >
+                <div class="card-inner">
+                  <div class="img-card">
+                    <img
+                      src="image/work/springboot.png"
+                      class="card-img-top"
+                      alt="SpringBoot Wallpaper"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="">Read +</span>
+                  <p class="card-text text-start"><b>Spring Boot Project</b></p>
+                </div>
+              </div>
+              <!-- end work  3-->
+              <!-- work  4-->
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#wastemanagement"
+              >
+                <div class="card-inner">
+                  <div class="img-card">
+                    <img
+                      src="image/work/wastemanagement.png"
+                      class="card-img-top"
+                      alt="Waste Management Wallpaper"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="">Read +</span>
+                  <p class="card-text text-start">
+                    <b>Waste Management App</b>
+                  </p>
+                </div>
+              </div>
+              <!-- end work  4-->
+              <!-- work  5-->
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#filipinocuisine"
+              >
+                <div class="card-inner">
+                  <div class="img-card">
+                    <img
+                      src="image/work/filipinocuisine.png"
+                      class="card-img-top"
+                      alt="Filipino Cuisine Wallpaper"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="">Read +</span>
+                  <p class="card-text text-start"><b>Filipino Cuisine</b></p>
+                </div>
+              </div>
+              <!-- end work  5-->
+              <!-- work  6-->
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#mydoggos"
+              >
+                <div class="card-inner">
+                  <div class="img-card">
+                    <img
+                      src="image/work/mydoggos.png"
+                      class="card-img-top"
+                      alt="My Doggos"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="">Read +</span>
+                  <p class="card-text text-start"><b>My Doggos</b></p>
+                </div>
+              </div>
+              <!-- end work  6-->
+              <!-- work  7-->
+              <div
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#rendezvous"
+              >
+                <div class="card-inner">
+                  <div class="img-card">
+                    <img
+                      src="image/work/rendezvous.png"
+                      class="card-img-top border"
+                      alt="Rendezvous Wallpaper"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="">Read +</span>
+                  <p class="card-text text-start"><b>Rendezvous</b></p>
+                </div>
+              </div>
+              <!-- end work  7-->
+            </div>
+          </div>
+          <!-- Modal 1 -->
+          <div
+            class="modal fade"
+            id="skillsmatrix"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ps-4 pe-4">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Skills Matrix
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-3">
+                  <p>About</p>
+                  <p>
+                    The Skills Matrix was used to monitor their skill level
+                    depending on the technologies they were working on and see
+                    what would be needed to improve their specific skill or the
+                    technologies they were using. From the team leader to the
+                    supervisor, they have the ability to approve the skill level
+                    that the team member submitted, and from there, they can
+                    keep track of what skill the team is lacking.
+                  </p>
+                  <p>Tools:</p>
+                  <ul class="pl-5">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Material UI</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>CRUD Operation</li>
+                    <li>Express</li>
+                    <li>MySQL</li>
+                    <li>Google Cloud Platform</li>
+                  </ul>
+                  <p>Features:</p>
+                  <p>Admin</p>
+                  <ul class="pl-5">
+                    <li>Monitor team members skills profile</li>
+                    <li>
+                      Ability to approve submitted skills level of team member
+                    </li>
+                    <li>Can track team performance</li>
+                  </ul>
+                  <p>Member</p>
+                  <ul class="pl-5">
+                    <li>Monitor own profile</li>
+                    <li>Add skills s or technologies</li>
+                    <li>Edit skills s or technologies</li>
+                    <li>Delete skills s or technologies</li>
+                    <li>
+                      Rate the proficiency level depending on the specific skill
+                      or technology
+                    </li>
+                  </ul>
+                  <hr />
+                  <p>
+                    <b
+                      >*Apologies for the lack of preview due to my previous
+                      company's restriction.</b
+                    >
+                  </p>
+                  <img
+                    src="./image/screenshot/skillsmatrix.png"
+                    alt="skillsmatrix screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 1  -->
+          <!-- Modal 2 -->
+          <div
+            class="modal fade"
+            id="careercity"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ps-4 pe-4">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Career City
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-3">
+                  <p>About</p>
+                  <p>
+                    This app was used to track how many employees are present in
+                    each department and, more importantly, for employees to find
+                    available opportunities in other job positions as they see
+                    what the role and responsibility of their chosen field are.
+                  </p>
+                  <p>Tools</p>
+                  <ul class="pl-5">
+                    <li>Java</li>
+                    <li>SpringBoot</li>
+                    <li>Maven</li>
+                    <li>Thymeleaf</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>MySQL</li>
+                    <li>Apache Tomcat</li>
+                    <li>Google Cloud Platform</li>
+                  </ul>
+                  <hr />
+                  <p>
+                    <b
+                      >*Apologies for the lack of preview due to my previous
+                      company's restriction.</b
+                    >
+                  </p>
+                  <img
+                    src="./image/screenshot/careercity.png"
+                    alt="careercity screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 2  -->
+          <!-- Modal 3 -->
+          <div
+            class="modal fade"
+            id="springboot"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ps-4 pe-4">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Certificate Online Application
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-3">
+                  <p>About</p>
+                  <p>
+                    ASP Certificate Online Application and Delivery is a
+                    continuous project of mine using Java Springboot.
+                  </p>
+                  <p>Tools</p>
+                  <ul class="pl-5">
+                    <li>Java</li>
+                    <li>SpringBoot</li>
+                    <li>MySQL</li>
+                    <li>Thymeleaf</li>
+                    <li>Bootstrap</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                  <p>User Features</p>
+                  <ul class="pl-5">
+                    <li>Register / Sign-in</li>
+                    <li>Order Selected Certificate</li>
+                    <li>View User Profile</li>
+                  </ul>
+                  <p>Admin Features</p>
+                  <ul class="pl-5">
+                    <li>View Admin Profile</li>
+                    <li>View Admin Dashboard</li>
+                    <li>Edit Registered Users</li>
+                    <li>Delete Registered Users</li>
+                    <li>Search for Registered Users</li>
+                  </ul>
+                  <hr />
+                  <img
+                    src="./image/screenshot/springboot1.png"
+                    alt="springboot1 screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/springboot2.png"
+                    alt="springboot2 screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/springboot3.png"
+                    alt="springboot3 screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/springboot4.png"
+                    alt="springboot4 screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/springboot5.png"
+                    alt="springboot5 screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/springboot6.png"
+                    alt="springboot6 screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 3  -->
+          <!-- Modal 4 -->
+          <div
+            class="modal fade"
+            id="wastemanagement"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ps-4 pe-4">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Solid Waste Management
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-3">
+                  <p>About</p>
+                  <p>
+                    RA 9003: Ecological Solid Waste Management Act of 2000. Our
+                    Waste, Our Resposibility.
+                  </p>
+                  <p>Tools</p>
+                  <ul class="pl-5">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>CRUD Operation</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                  </ul>
+                  <p>Features:</p>
+                  <p>For Waste Disposer</p>
+                  <ul class="pl-5">
+                    <li>Register / Sign-in</li>
+                    <li>Post an Event where they need a recycler to collect</li>
+                  </ul>
+                  <p>For Recycler</p>
+                  <ul class="pl-5">
+                    <li>Register / Sign-in</li>
+                    <li>Claim to collect the waste posted by disposers</li>
+                  </ul>
+                  <a
+                    class="text-decoration-none text-light"
+                    href="https://vanarden-waste-management.netlify.app/"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">LIVE</button>
+                  </a>
+                  <hr />
+                  <img
+                    src="./image/screenshot/wasteOne.png"
+                    alt="wastemanagement screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/wasteTwo.png"
+                    alt="wastemanagement screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/wasteThree.png"
+                    alt="wastemanagement screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 4  -->
+          <!-- Modal 5 -->
+          <div
+            class="modal fade"
+            id="filipinocuisine"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ps-4 pe-4">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Filipino Cuisine
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-3">
+                  <p>About</p>
+                  <p>A Selection of Best Filipino Dishes...</p>
+                  <p>Tools</p>
+                  <ul class="pl-5">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                  <p>Features</p>
+                  <ul class="pl-5">
+                    <li>Add Favorite Pinoy Dishes</li>
+                    <li>Select and Rank added food</li>
+                    <li>Mobile Responsive</li>
+                  </ul>
+                  <a
+                    class="text-decoration-none text-light"
+                    href="https://vanmercado.github.io/pinoy_food/"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">LIVE</button>
+                  </a>
+                  <hr />
+                  <img
+                    src="./image/screenshot/pinoydish.png"
+                    alt="pinoydishes screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/addpinoydish.png"
+                    alt="pinoydishes screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 5  -->
+          <!-- Modal 6 -->
+          <div
+            class="modal fade"
+            id="mydoggos"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ps-4 pe-4">
+                  <h2 class="modal-title" id="exampleModalLabel">My Doggos</h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-3">
+                  <p>About</p>
+                  <p>
+                    My Doggos is a blog I made for my pet dogs, this blog shows
+                    that sometimes...
+                  </p>
+                  <p>Tools</p>
+                  <ul class="pl-5">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>jQuery</li>
+                  </ul>
+                  <p>Features</p>
+                  <ul class="pl-5">
+                    <li>Mobile Responsive</li>
+                  </ul>
+                  <a
+                    class="text-decoration-none text-light"
+                    href="https://vanmercado.github.io/my_doggos/"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">LIVE</button>
+                  </a>
+                  <hr />
+                  <img
+                    src="./image/screenshot/doggosOne.png"
+                    alt="doggos screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/doggosTwo.png"
+                    alt="doggos screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 6  -->
+          <!-- Modal 6 -->
+          <div
+            class="modal fade"
+            id="rendezvous"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header ps-4 pe-4">
+                  <h2 class="modal-title" id="exampleModalLabel">Rendezvous</h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-3">
+                  <p>About</p>
+                  <p>
+                    Rendezvous is a food blogging/social network web
+                    application...
+                  </p>
+                  <p>Tools</p>
+                  <ul class="pl-5">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>CRUD Operation</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                  </ul>
+                  <p>User Features</p>
+                  <ul class="pl-5">
+                    <li>Register / Sign-in</li>
+                    <li>Add/Edit/Delete Restaurant Favorites</li>
+                    <li>View Restaurant by category</li>
+                    <li>Search for Restaurant and other Users</li>
+                    <li>Update User Profile</li>
+                  </ul>
+                  <p>Admin Features</p>
+                  <ul class="pl-5">
+                    <li>Add/Delete Restaurant</li>
+                    <li>Edit Restaurant details</li>
+                  </ul>
+                  <a
+                    class="text-decoration-none text-light"
+                    href="https://vanarden-rendezvous.netlify.app/"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">LIVE</button>
+                  </a>
+                  <hr />
+                  <img
+                    src="./image/screenshot/rendezvous.png"
+                    alt="rendezvous screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
 
-			<!-- Navbar links -->
-			<div
-				class="collapse navbar-collapse justify-content-around pb-4 wrapper"
-				id="collapsibleNavbar"
-			>
-				<ul class="navbar-nav text-center content mt-lg-2 mt-xl-2 shadow rounded">
-					<li class="nav-item">
-						<a class="font-weight-bold nav-link" id="links" href="#HOME"
-							>HOME</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="font-weight-bold nav-link " id="links" href="#WORK"
-							>WORK</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="font-weight-bold nav-link" id="links" href="#ABOUT"
-							>ABOUT</a
-						>
-					</li>
+                  <hr />
+                  <img
+                    src="./image/screenshot/rendezTwo.png"
+                    alt="rendezvous screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                  <br />
+                  <hr />
+                  <img
+                    src="./image/screenshot/rendezOne.png"
+                    alt="rendezvous screenshot photo"
+                    class="w-100"
+                  />
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal 6  -->
+        </section>
+        <!-- End Work  -->
+        <!-- Technologies  -->
+        <section class="technologies">
+          <div class="container text-center col-lg-10 technologies-inner">
+            <div class="container col-11 text-center">
+              <p class="technologies-title">
+                Everything is a learning experience.
+              </p>
+              <p class="technologies-msg">
+                Here are some of the technologies I have experienced working
+                with, and I am still discovering more about these tools.
+              </p>
+              <p class="technologies-msg">
+                Also, I want to learn new programming languages because, why
+                not? Learning never stops.
+              </p>
+            </div>
 
-					<li class="nav-item">
-						<a class="font-weight-bold nav-link" id="links" href="#CONTACT"
-							>CONTACT</a
-						>
-					</li>
-				
-				</ul>
-			</div>
-		</nav>
-		<div class="portfolio">
-			<main>
-				<section
-					class="home d-flex justify-content-center align-items-center"
-					id="HOME"
-				>
-					<div class="home-inner names container d-lg-flex d-xl-flex">
-						<div
-							class="
-								align-items-center
-								d-flex
-								col-lg-6 col-xl-6
-								text-nowrap
-								justify-content-center
-							"
-						>
-							<div class="text-nowrap div-name">
-								<p class="job-position">Application Developer</p>
-								<p class="name">
-									Van Arden S. Mercado
-								</p>
-	
-								<a
-									href="./VanArdenMercadoCV.pdf"
-									class="btn btn-sm btn-danger mt-2"
-								
-									download
-									><img src="./image/icon/downloads.png" class="downloadicon"
-									alt="download icon"></img>
-									Download CV</a
-									>
-								</div>
-						</div>
-						<div class="imahe justify-content-center d-flex col-lg-6 col-xl-8">
-							<img
-							id="main-image"
-							 src="./image/photo-van.png"
-								alt="photo of me"
-							/>
-						</div>
-					</div>
-					<div
-						class="
-							icon-links
-							d-flex
-							flex-wrap
-							justify-content-center
-							align-items-center 
-						"
-					>
-						<a href="https://mail.google.com/mail/" target="_blank">
-							<img
-								class="small-icon"
-								src="./image/icon/gmails.png"
-								alt="gmail small icon"
-							/>
-						</a>
-						<a href="https://github.com/vanmercado" target="_blank">
-							<img
-								class="small-icon"
-								src="./image/icon/githubs.png"
-								alt="github small icon"
-							/>
-						</a>
-						<a
-							href="https://www.linkedin.com/in/van-mercado-782a37121/"
-							target="_blank"
-						>
-							<img
-								class="small-icon"
-								src="./image/icon/linkedin.png"
-								alt="linkedin small icon"
-							/>
-						</a>
-					</div>
-				</section>
+            <div class="image-container container col-10">
+              <div>
+                <img
+                  src="./image/tools/html.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/css.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/javascript.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/bootstrap.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/materialui.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/thymeleaf.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/react.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/nodejs.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/mysql.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/java.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/springboot.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <div>
+                <img
+                  src="./image/tools/gcp.png"
+                  alt=""
+                  class="w-100"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Technologies  -->
+        <!-- About  -->
+        <section class="about" id="About">
+          <div class="container text-center col-lg-9">
+            <div class="container about-inner col-11 mb-4">
+              <p
+                class="about-title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                A little bit <span>about me</span>
+              </p>
+              <div class="d-flex justify-content-center">
+                <p
+                  class="about-msg col-11"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Greetings! I'm a web developer. I believe working with a
+                  multidisciplined approach brings creative inspiration to my
+                  work. I am passionate about creating applications that
+                  incorporate interactive design and modern technologies. I love
+                  experimenting with codes with the aim of improving
+                  productivity, quality,and performance.
+                </p>
+              </div>
+            </div>
 
-				<section class="work" id="WORK">
-					<div class="line p-0 ">
-						<div class="title-work work-wavy">
-							<span style="--i:1;">W</span>
-							<span style="--i:2;">O</span>
-							<span style="--i:3;">R</span>
-							<span style="--i:4;">K</span>
-							<span style="--i:5;">S</span>
-						</div>
-						<div class="title-about about-wavy">
-							<span style="--i:1;">A</span>
-							<span style="--i:2;">B</span>
-							<span style="--i:3;">O</span>
-							<span style="--i:4;">U</span>
-							<span style="--i:5;">T</span>
-						</div>
-					</div>
-					<div class="container">
-						<div
-							class="
-								p-3
-								pt-lg-5 pt-xl-5
-								d-flex
-								justify-content-center
-								flex-wrap
-								mt-2
-							"
-						>
-							<div
-							class="fade-in div-work skillsmatrix mb-5 col-lg-8 col-xl-7 border"
-							data-toggle="modal"
-							data-target=".bd-skillsmatrix-modal-lg"
-							
-							></div>
-							<div
-								class="fade-in div-work careercity mb-5 col-lg-8 col-xl-7 border"
-								data-toggle="modal"
-								data-target=".bd-careercity-modal-lg"
-							></div>
-							<div
-								class="fade-in div-work springboot mb-5 col-lg-8 col-xl-7 border"
-								data-toggle="modal"
-								data-target=".bd-springboot-modal-lg"
-							></div>
-							<div
-								class="fade-in div-work wastem mb-5 col-lg-8 col-xl-7 border"
-								data-toggle="modal"
-								data-target=".bd-wastem-modal-lg"
-							></div>
-							<div
-								class="fade-in div-work dish mb-5 col-lg-8 col-xl-7 border"
-								data-toggle="modal"
-								data-target=".bd-dish-modal-lg"
-							></div>
-							<div
-								class="fade-in div-work rendez mb-5 col-lg-8 col-xl-7  border"
-								data-toggle="modal"
-								data-target=".bd-rendez-modal-lg"
-							></div>
-							<div
-								class="fade-in div-work doggos mb-5 col-lg-8 col-xl-7 border"
-								data-toggle="modal"
-								data-target=".bd-doggos-modal-lg"
-							></div>
-							<!-- work1 modal  -->
-							<div
-								class="modal fade bd-skillsmatrix-modal-lg"
-								tabindex="-1"
-								role="dialog"
-								aria-labelledby="myLargeModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content text-left p-5">
-										<button
-											type="button"
-											class="close text-right"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<p>Project</p>
-										<h2>SKILLS MATRIX</h2>
-										<p>About</p>
-										<p>
-											The Skills Matrix was used to monitor their skill level depending on the technologies they were working on and see what would be needed to improve their specific skill set or the technologies they were using. From the team leader to the supervisor, they have the ability to approve the skill set level that the team member submitted, and from there, they can keep track of what skillset the team is lacking.
-										</p>
-										<p>Tools</p>
-										<ul class="pl-5">
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>JavaScript</li>
-											<li>Material UI</li>
-											<li>Bootstrap</li>
-											<li>React</li>
-											<li>Redux</li>
-											<li>CRUD Operation</li>
-											<li>Express</li>
-											<li>MySQL</li>
-											<li>Google Cloud Platform</li>
-										</ul>
-										<p>Features:</p>
-										<p>Admin</p>
-										<ul class="pl-5">
-											<li>Monitor team members skills set profile</li>
-											<li>Ability to approve submitted skills level of team member</li>
-											<li>Can track team performance</li>
-										</ul>
-										<p>Member</p>
-										<ul class="pl-5">
-											<li>Monitor own profile</li>
-											<li>Add skills sets or technologies</li>
-											<li>Edit skills sets or technologies</li>
-											<li>Delete skills sets or technologies</li>
-											<li>Rate the proficiency level depending on the specific skill set or technology</li>
-										</ul>
-										<hr />
-										<p><b>*Apologies for the lack of preview due to my previous company's restriction.</b></p>
-										<img src="./image/screen/skillsmatrix.png" alt="" />
-										<hr />
-									</div>
-								</div>
-							</div>
-							<!-- work1  -->
-							<!-- work2 modal  -->
-							<div
-								class="modal fade bd-careercity-modal-lg"
-								tabindex="-1"
-								role="dialog"
-								aria-labelledby="myLargeModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content text-left p-5">
-										<button
-											type="button"
-											class="close text-right"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<p>Project</p>
-										<h2>CAREER CITY</h2>
-										<p>About</p>
-										<p>This app was used to track how many employees are present in each department and, more importantly, for employees to find available opportunities in other job positions as they see what the role and responsibility of their chosen field are.</p>
-										<p>Tools</p>
-										<ul class="pl-5">
-											<li>Java</li>
-											<li>SpringBoot</li>
-											<li>Maven</li>
-											<li>Thymeleaf</li>
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>JavaScript</li>
-											<li>MySQL</li>
-											<li>Apache Tomcat</li>
-											<li>Google Cloud Platform</li>
-										</ul>
-										<hr />
-										<p><b>*Apologies for the lack of preview due to my previous company's restriction.</b></p>
-										<img src="./image/screen/careercity.png" alt="" />
-										<hr />
-									</div>
-								</div>
-							</div>
-							<!-- work2  -->
-							<!-- work3 modal  -->
-							<div
-								class="modal fade bd-springboot-modal-lg"
-								tabindex="-1"
-								role="dialog"
-								aria-labelledby="myLargeModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content text-left p-5">
-										<button
-											type="button"
-											class="close text-right"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<p>Project</p>
-										<h2>Certificate Online Application</h2>
-										<p>About</p>
-										<p>
-											ASP Certificate Online Application and Delivery is a continuous project of mine using Java Springboot. 
-										</p>
-										<p>Tools</p>
-										<ul class="pl-5">
-											<li>Java</li>
-											<li>SpringBoot</li>
-											<li>MySQL</li>
-											<li>Thymeleaf</li>
-											<li>Bootstrap</li>
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>JavaScript</li>
-										</ul>
-										<p>User Features</p>
-										<ul class="pl-5">
-											<li>Register / Sign-in</li>
-											<li>Order Selected Certificate</li>
-											<li>View User Profile</li>
-										</ul>
-										<p>Admin Features</p>
-										<ul class="pl-5">
-											<li>View Admin Profile</li>
-											<li>View Admin Dashboard</li>
-											<li>Edit Registered Users</li>
-											<li>Delete Registered Users</li>
-											<li>Search for Registered Users</li>
-										</ul>
-										<hr />
-										<img src="./image/screen/springboot1.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/springboot2.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/springboot3.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/springboot4.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/springboot5.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/springboot6.png" alt="" />
-									</div>
-								</div>
-							</div>
-							<!-- work3  -->
-							<!-- work4 modal  -->
-							<div
-								class="modal fade bd-wastem-modal-lg"
-								tabindex="-1"
-								role="dialog"
-								aria-labelledby="myLargeModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content text-left p-5">
-										<button
-											type="button"
-											class="close text-right"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<p>Project</p>
-										<h2>SOLID WASTE MANAGEMENT</h2>
-										<p>About</p>
-										<p>
-											RA 9003: Ecological Solid Waste Management Act of 2000.
-											Our Waste, Our Resposibility.
-										</p>
-										<p>Tools</p>
-										<ul class="pl-5">
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>JavaScript</li>
-											<li>Bootstrap</li>
-											<li>React</li>
-											<li>Redux</li>
-											<li>CRUD Operation</li>
-											<li>Express</li>
-											<li>MongoDB</li>
-										</ul>
-										<p>Features:</p>
-										<p>For Waste Disposer</p>
-										<ul class="pl-5">
-											<li>Register / Sign-in</li>
-											<li>
-												Post an Event where they need a recycler to collect
-											</li>
-										</ul>
-										<p>For Recycler</p>
-										<ul class="pl-5">
-											<li>Register / Sign-in</li>
-											<li>Claim to collect the waste posted by disposers</li>
-										</ul>
-										<a
-											class="text-decoration-none text-light"
-											href="https://vanarden-waste-management.netlify.app/"
-											target="_blank"
-										>
-											<button class="btn btn-info col-2">LIVE</button>
-										</a>
-										<hr />
-										<img src="./image/screen/wasteOne.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/wasteTwo.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/wasteThree.png" alt="" />
-									</div>
-								</div>
-							</div>
-							<!-- work4  -->
-							<!-- work5 modal  -->
-							<div
-								class="modal fade bd-dish-modal-lg"
-								tabindex="-1"
-								role="dialog"
-								aria-labelledby="myLargeModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content text-left p-5">
-										<button
-											type="button"
-											class="close text-right"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<p>Project</p>
-										<h2>FILIPINO CUISINE</h2>
-										<p>About</p>
-										<p>A Selection of Best Filipino Dishes...</p>
-										<p>Tools</p>
-										<ul class="pl-5">
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>JavaScript</li>
-											<li>Bootstrap</li>
-										</ul>
-										<p>Features</p>
-										<ul class="pl-5">
-											<li>Add Favorite Pinoy Dishes</li>
-											<li>Select and Rank added food</li>
-											<li>Mobile Responsive</li>
-										</ul>
-										<a
-											class="text-decoration-none text-light"
-											href="https://vanmercado.github.io/pinoy_food/"
-											target="_blank"
-										>
-											<button class="btn btn-info col-2">LIVE</button>
-										</a>
-										<hr />
-										<img src="./image/screen/pinoydish.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/addpinoydish.png" alt="" />
-									</div>
-								</div>
-							</div>
-							<!-- work5  -->
-							<!-- work6 modal  -->
-							<div
-								class="modal fade bd-rendez-modal-lg"
-								tabindex="-1"
-								role="dialog"
-								aria-labelledby="myLargeModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content text-left p-5">
-										<button
-											type="button"
-											class="close text-right"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<p>Project</p>
-										<h2>RENDEZVOUS</h2>
-										<p>About</p>
-										<p>
-											Rendezvous is a food blogging/social network web
-											application...
-										</p>
-										<p>Tools</p>
-										<ul class="pl-5">
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>JavaScript</li>
-											<li>Bootstrap</li>
-											<li>React</li>
-											<li>Redux</li>
-											<li>CRUD Operation</li>
-											<li>Express</li>
-											<li>MongoDB</li>
-										</ul>
-										<p>User Features</p>
-										<ul class="pl-5">
-											<li>Register / Sign-in</li>
-											<li>Add/Edit/Delete Restaurant Favorites</li>
-											<li>View Restaurant by category</li>
-											<li>Search for Restaurant and other Users</li>
-											<li>Update User Profile</li>
-										</ul>
-										<p>Admin Features</p>
-										<ul class="pl-5">
-											<li>Add/Delete Restaurant</li>
-											<li>Edit Restaurant details</li>
-										</ul>
-										<a
-											class="text-decoration-none text-light"
-											href="https://vanarden-rendezvous.netlify.app/"
-											target="_blank"
-										>
-											<button class="btn btn-info col-2">LIVE</button>
-										</a>
-										<hr />
-										<img src="./image/work/rendezvous.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/rendezTwo.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/rendezOne.png" alt="" />
-									</div>
-								</div>
-							</div>
-							<!-- work6  -->
-							<!-- work7 modal  -->
-							<div
-								class="modal fade bd-doggos-modal-lg"
-								tabindex="-1"
-								role="dialog"
-								aria-labelledby="myLargeModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content text-left p-5">
-										<button
-											type="button"
-											class="close text-right"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<p>Project</p>
-										<h2>MY DOGGOS</h2>
-										<p>About</p>
-										<p>
-											My Doggos is a blog I made for my pet dogs, this blog
-											shows that sometimes...
-										</p>
-										<p>Tools</p>
-										<ul class="pl-5">
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>JavaScript</li>
-											<li>Bootstrap</li>
-											<li>jQuery</li>
-										</ul>
-										<p>Features</p>
-										<ul class="pl-5">
-											<li>Mobile Responsive</li>
-										</ul>
-										<a
-											class="text-decoration-none text-light"
-											href="https://vanmercado.github.io/my_doggos/"
-											target="_blank"
-										>
-											<button class="btn btn-info col-2">LIVE</button>
-										</a>
-										<hr />
-										<img src="./image/screen/doggosOne.png" alt="" />
-										<hr />
-										<hr />
-										<img src="./image/screen/doggosTwo.png" alt="" />
-									</div>
-								</div>
-							</div>
-							<!-- work7  -->
-						</div>
-					</div>			
-				</section>	
-				<div id="ABOUT"></div>
-				<section class="about bg-light">
-					<div class="container d-lg-flex d-xl-flex div-about-inner mb-5">
-						<div class="p-0 col-xl-7 col-lg-7 mb-5">
-							<div class="col-12 p-0 text-center about-left">
-								<h3 class="fade-in about-title">A LITTLE BIT ABOUT ME</h3>
-							</div>
-							<div>
-								<div>
-									<p class="fade-in about-p">
-										Hi, I am a web developer. I believe working with a multi-disciplined approach brings creative inspiration to my work. I am passionate about creating websites and web apps that incorporate interactive design and modern technologies. I love experimenting with codes with the aim of improving productivity, quality, performance, and speed.
-										<br />
-										<br />
-										Here are some technologies that I have experienced and am still expanding my knowledge.
-									</p>
-								</div>
-								<div class="d-flex justify-content-center flex-wrap mt-5">
-									<div class="fade-in col-4 text-center mb-4">
-										<img src="./image/tools/html.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4">
-										<img src="./image/tools/css.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4">
-										<img src="./image/tools/JavaScript-logo.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in  col-4 text-center mb-4">
-										<img src="./image/tools/bootstrap.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4">
-										<img src="./image/tools/materialui.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4 ">
-										<img src="./image/tools/thymeleaf.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4 ">
-										<img src="./image/tools/react.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4">
-										<img src="./image/tools/nodejsexpress.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4">
-										<img src="./image/tools/mysql.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4 ">
-										<img src="./image/tools/java.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4 ">
-										<img src="./image/tools/springboot.png" class="tools-img " alt="html logo">
-									</div>
-									<div class="fade-in col-4 text-center mb-4 ">
-										<img src="./image/tools/gcp.png" class="tools-img " alt="html logo">
-									</div>
-								</div>													
-							</div>
-						</div>
-
-						<!-- carousel  -->
-						<div class="container div-carousel col-xl-5 p-5 d-flex justify-content-center">
-							<div
-								id="carouselExampleCaptions"
-								class="carousel slide d-flex align-items-center"
-								data-ride="carousel"
-							>
-								<ol class="carousel-indicators">
-									<li
-										data-target="#carouselExampleCaptions"
-										data-slide-to="0"
-										class="active"
-									></li>
-									<li
-										data-target="#carouselExampleCaptions"
-										data-slide-to="1"
-									></li>
-									<li
-										data-target="#carouselExampleCaptions"
-										data-slide-to="2"
-									></li>
-									<li
-										data-target="#carouselExampleCaptions"
-										data-slide-to="3"
-									></li>
-									<li
-										data-target="#carouselExampleCaptions"
-										data-slide-to="4"
-									></li>
-									<li
-										data-target="#carouselExampleCaptions"
-										data-slide-to="5"
-									></li>
-								</ol>
-								<div class="carousel-inner" role="listbox">
-									<div class="carousel-item active">
-										<img
-											class="d-block w-100 border-0"
-											src="./image/icon/dog.png"
-											alt="First slide"
-										/>
-										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-danger">I LOVE DOGS</h3>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img
-											class="d-block w-100 border-0"
-											src="./image/icon/backpack.png"
-											alt="Second slide"
-										/>
-										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-danger">I LOVE TRAVELING</h3>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img
-											class="d-block w-100 border-0"
-											src="./image/icon/camping.jpg"
-											alt="Third slide"
-										/>
-										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-danger">I LOVE CAMPING</h3>
-										</div>
-									</div>
-
-									<div class="carousel-item">
-										<img
-										class="d-block w-100 border-0"
-										src="./image/icon/running.png"
-										alt="Five slide"
-										/>
-										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-danger">I LOVE RUNNING</h3>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img
-											class="d-block w-100 border-0"
-											src="./image/icon/mtb.png"
-											alt="Four slide"
-										/>
-										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-danger">I LOVE MTB</h3>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img
-											class="d-block w-100 border-0"
-											src="./image/icon/spartan.png"
-											alt="Four slide"
-										/>
-										<div class="carousel-caption d-none d-md-block">
-											<h3 class="text-danger">I LOVE SPARTAN</h3>
-										</div>
-									</div>
-								</div>
-								<a
-									class="carousel-control-prev"
-									href="#carouselExampleCaptions"
-									role="button"
-									data-slide="prev"
-								>
-									<span
-										class="carousel-control-prev-icon bg-danger"
-										aria-hidden="true"
-									></span>
-									<span class="sr-only text-danger">Previous</span>
-								</a>
-								<a
-									class="carousel-control-next"
-									href="#carouselExampleCaptions"
-									role="button"
-									data-slide="next"
-								>
-									<span
-										class="carousel-control-next-icon bg-danger"
-										aria-hidden="true"
-									></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-						</div>
-						<!-- End Carousel  -->
-						
-					</section>
-					<!-- footer  -->
-				<section
-					class="footer d-flex justify-content-center align-items-center"
-					id="CONTACT"
-				>
-					<div class="container text-center col-xl-5">
-						<div class="mb-5">
-							<h6 class="footer-msg">
-								Hello! If a piqued your interest, feel free to email me:
-							</h6>
-							<h6 class="footer-mail">vanardenmercado@gmail.com</h6>
-						</div>
-						<div class="d-flex justify-content-around">
-							<a
-								href="https://mail.google.com/mail/"
-								target="_blank"
-								class="text-light"
-								>GMAIL</a
-							>
-							<a
-								href="https://www.linkedin.com/in/van-mercado-782a37121/"
-								target="_blank"
-								class="text-light"
-								>LINKEDIN</a
-							>
-							<a
-								href="https://github.com/vanmercado"
-								target="_blank"
-								class="text-light"
-								>GITHUB</a
-							>
-						</div>
-					</div>
-				</section>
-			</main>
-		</div>
-		<!-- Script  -->
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-			integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-			crossorigin="anonymous"
-		></script>
-		<!-- gsap -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-		<script src="./App.js"></script>
-	</body>
+            <div class="container col-11 about-box">
+              <div class="box thecard">
+                <img
+                  src="./image/about/spartan.jpg"
+                  alt="spartan photo"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+                <div
+                  class="theback d-flex justify-content-center align-items-center"
+                >
+                  <h4>I do Spartan races</h4>
+                </div>
+              </div>
+              <div class="box thecard">
+                <img
+                  src="./image/about/dogs.jpg"
+                  alt="dogs photo"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+                <div
+                  class="theback d-flex justify-content-center align-items-center"
+                >
+                  <h4>I love dogs</h4>
+                </div>
+              </div>
+              <div class="box thecard">
+                <img
+                  src="./image/about/traveling.jpg"
+                  alt="traveling photo"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+                <div
+                  class="theback d-flex justify-content-center align-items-center"
+                >
+                  <h4>I like to travel</h4>
+                </div>
+              </div>
+              <div class="box thecard">
+                <img
+                  src="./image/about/mtb.jpg"
+                  alt="mtb photo"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+                <div
+                  class="theback d-flex justify-content-center align-items-center"
+                >
+                  <h4>I love riding bikes</h4>
+                </div>
+              </div>
+              <div class="box thecard">
+                <img
+                  src="./image/about/car.jpg"
+                  alt="car photo"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+                <div
+                  class="theback d-flex justify-content-center align-items-center"
+                >
+                  <h4>I like cars</h4>
+                </div>
+              </div>
+              <div class="box thecard">
+                <img
+                  src="./image/about/running.png"
+                  alt="running photo"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+                <div
+                  class="theback d-flex justify-content-center align-items-center"
+                >
+                  <h4>I love running</h4>
+                </div>
+              </div>
+              <div class="box thecard">
+                <img
+                  src="./image/about/camping.jpg"
+                  alt="camping photo"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                />
+                <div
+                  class="theback d-flex justify-content-center align-items-center"
+                >
+                  <h4>I love camping</h4>
+                </div>
+              </div>
+            </div>
+            <!-- carousel  -->
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide container"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="6"
+                  aria-label="Slide 7"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./image/about/dogs.jpg"
+                    alt="dogs photo"
+                    class="d-block w-100 carousel-photo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>I love dogs</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/about/mtb.jpg"
+                    alt="mtb photo"
+                    class="d-block w-100 carousel-photo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>I love riding bikes</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/about/spartan.jpg"
+                    alt="spartan photo"
+                    class="d-block w-100 carousel-photo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>I do Spartan races</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/about/running.png"
+                    alt="running photo"
+                    class="d-block w-100 carousel-photo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>I love running</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/about/camping.jpg"
+                    alt="camping photo"
+                    class="d-block w-100 carousel-photo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>I love camping</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/about/traveling.jpg"
+                    alt="traveling photo"
+                    class="d-block w-100 carousel-photo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>I like to travel</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/about/car.jpg"
+                    alt="running photo"
+                    class="d-block w-100 carousel-photo"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>I like cars</h5>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- carousel  -->
+          </div>
+        </section>
+        <!-- End About  -->
+        <!-- Contact -->
+        <section class="contact" id="Contact">
+          <div class="d-lg-flex justify-content-lg-center">
+            <div
+              class="col-lg-9 contact-inner d-flex justify-content-around align-items-center shadow-lg"
+            >
+              <p class="text-light mt-3">Let's code</p>
+              <div>
+                <a
+                  href="./VanArdenMercadoCV.pdf"
+                  class="btn btn-sm btn-light downloadcv d-flex justify-content-center align-items-center"
+                  download
+                  ><img
+                    src="./image/icon/downloadicon2.png"
+                    class="downloadicon me-3"
+                    alt="download icon"
+                  />Hire Me !</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container col-10">
+            <div class="text-center contact-p">
+              <p>Hello! If a piqued your interest, feel free to email me:</p>
+              <p>vanardenmercado@gmail.com</p>
+            </div>
+            <hr />
+            <div class="mb-2">
+              <div class="d-flex justify-content-between">
+                <p class="text-secondary">© 2023</p>
+                <div class="footer-icon">
+                  <a
+                    href="https://mail.google.com/mail/"
+                    target="_blank"
+                    class="text-decoration-none"
+                  >
+                    <img
+                      class="small-icon me-1"
+                      src="./image/icon/gmails.png"
+                      alt="gmail small icon"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/vanmercado"
+                    target="_blank"
+                    class="text-decoration-none"
+                  >
+                    <img
+                      class="small-icon me-1"
+                      src="./image/icon/githubs.png"
+                      alt="github small icon"
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/van-mercado-782a37121/"
+                    target="_blank"
+                    class="text-decoration-none"
+                  >
+                    <img
+                      class="small-icon me-1"
+                      src="./image/icon/linkedin.png"
+                      alt="linkedin small icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact -->
+        <a href="#Home" class="to-top">
+          <img
+            class="uparrow-icon"
+            src="./image/icon/up-arrow.png"
+            alt="up arrow icon"
+        /></a>
+      </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./App.js"></script>
+  </body>
 </html>
