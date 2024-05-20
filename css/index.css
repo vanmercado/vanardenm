@@ -81,7 +81,7 @@ main {
 
 /* Home  */
 .home {
-  background-image: url(./image/banner.png);
+  background-image: url(../image/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
