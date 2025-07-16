@@ -34,21 +34,23 @@ body.dark-theme {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  padding: 30px 100px 20px 100px;
+  padding: 30px 100px;
 }
-.menu ul li {
-  display: inline-block;
-  margin: 0 10px;
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 5rem;
 }
-.menu ul li a {
+.menu li a {
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
   color: var(--white);
-  padding: 5px 15px;
   text-decoration: none;
   position: relative;
   transition: all 0.5s ease;
@@ -58,7 +60,7 @@ nav {
   color: var(--white);
 }
 
-.menu ul li a:after {
+.menu li a:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -72,10 +74,10 @@ nav {
   z-index: -1;
   border-radius: 0 50px;
 }
-.menu ul li:hover a:after {
+.menu li:hover a:after {
   transform: translate(-50%, -50%) rotate(160deg) scale(1.2);
 }
-.menu ul li:hover a {
+.menu li:hover a {
   color: #fff;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
 }
@@ -237,9 +239,8 @@ body.dark-theme .to-top {
 .title {
   font-size: 3rem;
 }
-
-#project {
-  margin-top: 100px;
+.projects {
+  margin: 90px 0 150px 0;
 }
 .project-img img {
   cursor: pointer;
@@ -261,15 +262,10 @@ body.dark-theme .to-top {
   color: #ff4373;
   font-weight: 600;
 }
-#loadMoreBtn {
+.loadMoreButton {
   color: #024caa;
   font-weight: 600;
   font-size: 16px;
-}
-
-#experience {
-  margin-top: 150px;
-  margin-bottom: 50px;
 }
 
 /*progress bar  */
@@ -300,10 +296,11 @@ body.dark-theme .to-top {
 }
 .subject {
   font-size: 18px;
-  font-weight: thin;
+  font-weight: 300;
   color: #808080;
   padding-bottom: 15px;
   text-transform: uppercase;
+  margin: 0;
 }
 .progress-bar {
   position: relative;
@@ -334,24 +331,21 @@ body.dark-theme .progress-line {
   }
 }
 
-#about {
-  padding: 150px 0;
+.about-section {
+  padding: 180px 0 220px 0;
 }
 .about-p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   line-height: 35px;
   text-indent: 50px;
   word-spacing: 3px;
+  font-size: 18px;
 }
 
-#contact {
+.contacts {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 120px 0;
-  margin-bottom: 50px;
+  padding: 0 0 170px 0;
 }
 .contact-info-container {
   display: flex;
@@ -392,20 +386,10 @@ a:hover {
   cursor: pointer;
 }
 
-.logo {
-  margin-top: 25px;
-}
-
 @media only screen and (max-width: 1000px) {
   nav {
     flex-direction: column;
     align-items: flex;
-  }
-  .menu ul {
-    padding: 0;
-  }
-  .menu ul li {
-    margin: 0 15px 0 0;
   }
   .banner {
     display: flex;
@@ -417,7 +401,7 @@ a:hover {
     font-size: 40px;
   }
   .banner-text {
-    margin-top: 15%;
+    margin-top: 5%;
   }
   .social-icons-container {
     justify-content: center;
@@ -433,7 +417,6 @@ a:hover {
   }
   .about-p {
     line-height: 40px;
-    font-size: 18px;
   }
 }
 
@@ -441,7 +424,7 @@ a:hover {
   nav {
     padding: 15px;
   }
-  .menu ul li a {
+  .menu li a {
     font-size: 12px;
     padding: 5px;
   }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./assets/icon/favicon.ico?v=2" type="image/x-icon" />
+    <link rel="icon" href="./assets/icon/favicon.ico?v=2" type="image/x-icon">
     <title>vanarden</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -14,66 +14,320 @@
 </head>
 
 <body class="light-theme">
-    <div class="header">
-        <nav>
-            <div class="logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="banner">
-            <div class="banner-text">
-                <h1>Van Arden Mercado<span>Full Stack Developer</span></h1>
-                <p class="m-0">I am a developer with experience in
-                </p>
-                <p>both front-end and back-end technologies.
-                </p>
-                <div class="social-icons-container ">
-                    <div class="social-icon-box gmail ">
-                        <div class="icon-face">
-                            <a href="mailto:vanardenmercado@gmail.com" target="_blank">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="social-icon-box linkedin">
-                        <div class="icon-face">
-                            <a href="https://www.linkedin.com/in/van-mercado-782a37121/" target="_blank">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="social-icon-box github">
-                        <div class="icon-face">
-                            <a href="https://github.com/vanmercado" target="_blank">
-                                <i class=" fa-brands fa-github"></i>
-                            </a>
-                        </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Van Arden Mercado<span>Full Stack Developer</span></h1>
+            <p class="m-0">I am a developer with experience in
+            </p>
+            <p>both front-end and back-end technologies.
+            </p>
+            <div class="social-icons-container ">
+                <div class="social-icon-box gmail ">
+                    <div class="icon-face">
+                        <a href="mailto:vanardenmercado@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <a href="./VanArdenMercado_FullStackDeveloper_CV.pdf" class="downloadBtn" download>
-                        Download CV</a>
+                <div class="social-icon-box linkedin">
+                    <div class="icon-face">
+                        <a href="https://www.linkedin.com/in/van-mercado-782a37121/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-icon-box github">
+                    <div class="icon-face">
+                        <a href="https://github.com/vanmercado" target="_blank">
+                            <i class=" fa-brands fa-github"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="banner-img">
-                <img src="./assets/img/photo-van.png" alt="my photo">
-                <i id="theme-toggle" class="fas fa-moon toggle-icon"></i>
+            <div>
+                <a href="./VanArdenMercado_FullStackDeveloper_CV.pdf" class="downloadBtn" download>
+                    Download CV</a>
             </div>
         </div>
-    </div>
-    <div id="he"></div>
-    <section id="project" class="px-4">
-        <div class="p-0 col-lg-9 container-fluid col-sm-10">
-            <p class="text-center text-secondary mb-1">Browse My Recent</p>
-            <h2 class="text-center mb-5 fw-bold title">Projects</h2>
-            <div class=" d-lg-flex mb-5 project-box">
+        <div class="banner-img">
+            <img src="./assets/img/photo-van.png" alt="my photo">
+            <i id="theme-toggle" class="fas fa-moon toggle-icon"></i>
+        </div>
+    </section>
+    <section id="project" class="projects">
+        <p class="text-center text-secondary m-0">Browse My Recent</p>
+        <h2 class="text-center mb-5 mt-1 fw-bold title">Projects</h2>
+        <ul class="p-0 col-lg-9 container-fluid col-sm-10">
+            <li class="list-group-item d-lg-flex mb-5 project-box border-0">
+                <div class="col-lg-5 project-img" data-aos="zoom-in-right">
+                    <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#meritmedical"
+                        src="./assets/work/meritmedical.png" alt="meritmedical screenshot">
+                </div>
+                <div class="col-lg-7 project-text" data-aos="fade-up">
+                    <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#meritmedical">Merit Medical Japan</a>
+                    <p class="mt-2">Merit Medical Japan Co., Ltd. was established in 2015 as the Japanese subsidiary of
+                        Merit Medical Systems, a company based in Utah, USA. We aim to contribute to the healthy lives
+                        of people around the world.
+                    </p>
+                    <span>WordPress</span>
+                    <span>PHP</span>
+                    <span>HTML</span>
+                    <span>SCSS</span>
+                    <span>JavaScript</span>
+                    <div class="mt-3 d-flex justify-content-between">
+                        <div>
+                            <a class="text-decoration-none btn btn-sm btn-secondary" href="https://www.merit.co.jp/"
+                                target="_blank">
+                                Live
+                            </a>
+                            <a class="text-decoration-none btn btn-sm btn-secondary ms-2"
+                                href="https://github.com/vanmercado/meritmedical" target="_blank">
+                                Github
+                            </a>
+                        </div>
+                        <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
+                            data-bs-target="#meritmedical">Read more..</a>
+                    </div>
+                </div>
+                <!-- Modal 1-->
+                <div class="modal fade" id="meritmedical" tabindex="-1" aria-labelledby="exampleModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3 ps-3" id="exampleModal">Merit Medical Japan</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-3">
+                                <p>About:</p>
+                                <p>
+                                    Merit Medical Japan Co., Ltd. was established in 2015 as the Japanese subsidiary of
+                                    Merit Medical Systems, a Utah-based company in the United States. We are a
+                                    healthcare company that develops a variety of medical devices to contribute to the
+                                    healthy lives of people around the world.
+                                </p>
+                                <p>Github:</p>
+                                <p><a href="https://github.com/vanmercado/meritmedical" target="_blank"
+                                        class="text-dark ms-4">https://github.com/vanmercado/meritmedical</a></p>
+                                <p>Tools:</p>
+                                <ul class="pl-5">
+                                    <li>WordPress</li>
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <p>Features:</p>
+                                <ul class="pl-5">
+                                    <li>Photo Gallery</li>
+                                    <li>Mobile Responsive</li>
+                                </ul>
+                                <a class="text-decoration-none btn btn-primary mt-2" href="https://www.merit.co.jp/"
+                                    target="_blank">
+                                    LIVE
+                                </a>
+                                <hr>
+                                <img src="./assets/screenshot/MeritMedical-img1.png"
+                                    alt="Merit Medical Japan screenshot photo" class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/MeritMedical-img2.png"
+                                    alt="Merit Medical Japan screenshot photo" class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/MeritMedical-img3.png"
+                                    alt="Merit Medical Japan screenshot photo" class="w-100">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal 1 -->
+            </li>
+            <li class="list-group-item d-lg-flex mb-5 border-0">
+                <div class="col-lg-5 project-img" data-aos="zoom-in-right">
+                    <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#naganoscience"
+                        src="./assets/work/naganoscience.png" alt="naganoscience screenshot">
+                </div>
+                <div class="col-lg-7 project-text" data-aos="fade-up">
+                    <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#naganoscience">Nagano Science Japan</a>
+                    <p class="mt-2">A Japan based solution provider for storage process of stability testing. With a
+                        half-century experience in pharmaceutical industry.
+                    </p>
+                    <span>WordPress</span>
+                    <span>PHP</span>
+                    <span>HTML</span>
+                    <span>SCSS</span>
+                    <span>JavaScript</span>
+                    <div class="mt-3 d-flex justify-content-between">
+                        <div>
+                            <a class="text-decoration-none btn btn-sm btn-secondary"
+                                href="https://www.naganoscience.com/ja/" target="_blank">
+                                Live
+                            </a>
+                            <a class="text-decoration-none btn btn-sm btn-secondary ms-2"
+                                href="https://github.com/vanmercado/naganoscience" target="_blank">
+                                Github
+                            </a>
+                        </div>
+                        <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
+                            data-bs-target="#naganoscience">Read more..</a>
+                    </div>
+                </div>
+                <!-- Modal 2-->
+                <div class="modal fade" id="naganoscience" tabindex="-1" aria-labelledby="exampleModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3 ps-3" id="exampleModal">Nagano Science Japan</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-3">
+                                <p>About:</p>
+                                <p>
+                                    Pharmaceutical stability testing is an essential process to ensure the quality of
+                                    pharmaceuticals. Nagano Science is a company that makes stability testing smarter
+                                    than anyone else by making full use of "data" x "platform" x "ecosystem." If
+                                    everyone in the world can get high-quality pharmaceuticals when they need them and
+                                    feel safe... the world will be a kinder place. We believe this and continue to
+                                    challenge and evolve every day.
+                                </p>
+                                <p>Github:</p>
+                                <p><a href="https://github.com/vanmercado/naganoscience" target="_blank"
+                                        class="text-dark ms-4">https://github.com/vanmercado/naganoscience</a></p>
+                                <p>Tools:</p>
+                                <ul class="pl-5">
+                                    <li>WordPress</li>
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <p>Features:</p>
+                                <ul class="pl-5">
+                                    <li>Photo Gallery</li>
+                                    <li>Mobile Responsive</li>
+                                </ul>
+                                <a class="text-decoration-none btn btn-primary mt-2"
+                                    href="https://www.naganoscience.com/ja/" target="_blank">
+                                    LIVE
+                                </a>
+                                <hr>
+                                <img src="./assets/screenshot/NagonoScience-img1.png"
+                                    alt="Nagano Science screenshot photo" class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/NaganoScience-img2.png"
+                                    alt="Nagano Science screenshot photo" class="w-100">
+                                <hr>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal 2 -->
+            </li>
+            <li class="list-group-item d-lg-flex mb-5 border-0">
+                <div class="col-lg-5 project-img" data-aos="zoom-in-right">
+                    <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#hondashiga"
+                        src="./assets/work/hondashiga.png" alt="hondashiga screenshot">
+                </div>
+                <div class="col-lg-7 project-text" data-aos="fade-up">
+                    <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#hondashiga">Honda Cars Shiga</a>
+                    <p class="mt-2">If you are looking for a Honda car in Shiga Prefecture, please visit the Shiga
+                        Prefecture Honda Cars general website! You can search for nearby stores and test drive cars, and
+                        find information on campaigns and new cars.
+                    </p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <div class="mt-3 d-flex justify-content-between">
+                        <div>
+                            <a class="text-decoration-none btn btn-sm btn-secondary" href="https://hondacars.jp/shiga/"
+                                target="_blank">
+                                Live
+                            </a>
+                            <a class="text-decoration-none btn btn-sm btn-secondary ms-2"
+                                href="https://github.com/vanmercado/honda_shiga" target="_blank">
+                                Github
+                            </a>
+                        </div>
+                        <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
+                            data-bs-target="#hondashiga">Read more..</a>
+                    </div>
+                </div>
+                <!-- Modal 3-->
+                <div class="modal fade" id="hondashiga" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3 ps-3" id="exampleModal">Honda Cars Shiga</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-3">
+                                <p>About:</p>
+                                <p>
+                                    Honda's global expansion
+                                    <br>
+                                    <br>
+                                    Honda has expanded overseas since it began exporting motorcycles in the 1950s. At
+                                    each of its bases, the company creates jobs, develops human resources, and grows
+                                    together with its partners in the local community. We continue to provide products
+                                    that are accepted by the market.
+                                </p>
+                                <p>Github:</p>
+                                <p><a href="https://github.com/vanmercado/honda_shiga" target="_blank"
+                                        class="text-dark ms-4">https://github.com/vanmercado/honda_shiga</a></p>
+                                <p>Tools:</p>
+                                <ul class="pl-5">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <p>Features:</p>
+                                <ul class="pl-5">
+                                    <li>Photo Gallery</li>
+                                    <li>Mobile Responsive</li>
+                                </ul>
+                                <a class="text-decoration-none btn btn-primary mt-2" href="https://hondacars.jp/shiga/"
+                                    target="_blank">
+                                    LIVE
+                                </a>
+                                <hr>
+                                <img src="./assets/screenshot/HondaShiga-img1.png"
+                                    alt="Honda Cars Shiga screenshot photo" class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/HondaShiga-img2.png"
+                                    alt="Honda Cars Shiga screenshot photo" class="w-100">
+                                <hr>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal 3 -->
+            </li>
+            <li class="list-group-item d-lg-flex mb-5 border-0">
                 <div class="col-lg-5 project-img" data-aos="zoom-in-right">
                     <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#rendezvous"
                         src="./assets/work/rendezvous.png" alt="rendezvous screenshot">
@@ -89,52 +343,86 @@
                     <span>Elementor</span>
                     <div class="mt-3 d-flex justify-content-between">
                         <div>
-                            <a class="text-decoration-none text-light" href="https://vanmercado.github.io/rendezvous/"
-                                target="_blank">
-                                <button class="btn btn-sm btn-secondary">Live</button>
+                            <a class="text-decoration-none btn btn-sm btn-secondary"
+                                href="https://vanmercado.github.io/rendezvous/" target="_blank">
+                                Live
                             </a>
-                            <a class="text-decoration-none text-light ms-2"
+                            <a class="text-decoration-none btn btn-sm btn-secondary ms-2"
                                 href="https://github.com/vanmercado/rendezvous" target="_blank">
-                                <button class="btn btn-sm btn-secondary">Github</button>
+                                Github
                             </a>
                         </div>
                         <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
                             data-bs-target="#rendezvous">Read more..</a>
                     </div>
                 </div>
-            </div>
-            <div class=" d-lg-flex mb-5 ">
-                <div class="col-lg-5 project-img" data-aos="zoom-in-right">
-                    <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#filipinocuisine"
-                        src="./assets/work/filipinocuisine.png" alt="filipinocuisine screenshot">
-                </div>
-                <div class="col-lg-7 project-text" data-aos="fade-up">
-                    <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none" data-bs-toggle="modal"
-                        data-bs-target="#filipinocuisine">Filipino Cuisine</a>
-                    <p class="mt-2">A selection of some of the best Filipino dishes showcases the vibrant flavors of the
-                        Philippines.
-                    </p>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Bootstrap</span>
-                    <div class="mt-3 d-flex justify-content-between">
-                        <div>
-                            <a class="text-decoration-none text-light" href="https://vanmercado.github.io/pinoy_food/"
-                                target="_blank">
-                                <button class="btn btn-sm btn-secondary">Live</button>
-                            </a>
-                            <a class="text-decoration-none text-light" href="https://github.com/vanmercado/pinoy_food"
-                                target="_blank">
-                                <button class="btn btn-sm btn-secondary ms-2">Github</button>
-                            </a>
+                <!-- Modal 4-->
+                <div class="modal fade" id="rendezvous" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3 ps-3" id="exampleModal">Rendezvous</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-3">
+                                <p>About</p>
+                                <p>
+                                    They are the perfect places to unwind—whether you’re meeting friends, hosting a
+                                    casual business
+                                    meeting, or simply enjoying some peaceful alone time. Their menus feature a
+                                    delectable selection
+                                    of dishes, ranging from hearty meals to light snacks, complemented by an impressive
+                                    array of
+                                    coffee and beverage options. With elegant decor and meticulous attention to detail,
+                                    places like
+                                    these provide an inviting space that perfectly balances comfort and sophistication,
+                                    ensuring
+                                    every visit is a memorable experience.
+                                </p>
+                                <p>Github:</p>
+                                <p><a href="https://github.com/vanmercado/rendezvous" target="_blank"
+                                        class="text-dark ms-4">https://github.com/vanmercado/rendezvous</a></p>
+                                <p>Tools:</p>
+                                <ul class="pl-5">
+                                    <li>WordPress</li>
+                                    <li>Elementor</li>
+
+                                </ul>
+                                <p>Features:</p>
+                                <ul class="pl-5">
+                                    <li>Photo Gallery</li>
+                                    <li>Mobile Responsive</li>
+                                </ul>
+                                <a class="text-decoration-none btn btn-primary mt-2"
+                                    href="https://vanmercado.github.io/rendezvous/" target="_blank">
+                                    LIVE
+                                </a>
+                                <hr>
+                                <img src="./assets/screenshot/rendezvous-home.png" alt="rendezvous screenshot photo"
+                                    class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/rendezvous-cafe.png" alt="rendezvous screenshot photo"
+                                    class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/rendezvous-testimonial.png"
+                                    alt="rendezvous screenshot photo" class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/rendezvous-contact.png" alt="rendezvous screenshot photo"
+                                    class="w-100">
+                            </div>
                         </div>
-                        <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
-                            data-bs-target="#filipinocuisine">Read more..</a>
                     </div>
                 </div>
-            </div>
-            <div class=" d-lg-flex mb-5">
+                <!-- End Modal 4 -->
+            </li>
+            <li class="list-group-item d-lg-flex mb-5 border-0">
                 <div class="col-lg-5 project-img" data-aos="zoom-in-right">
                     <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#skillsmatrix"
                         src="./assets/work/skillsmatrix.png" alt="skillsmatrix screenshot">
@@ -158,80 +446,249 @@
                     <span>Redux</span>
                     <div class="mt-3 d-flex justify-content-between">
                         <div>
-                            <a class="text-decoration-none text-light" href="https://github.com/vanmercado/skillsmatrix"
-                                target="_blank">
-                                <button class="btn btn-sm btn-secondary">Github</button>
+                            <a class="text-decoration-none btn btn-sm btn-secondary"
+                                href="https://github.com/vanmercado/skillsmatrix" target="_blank">
+                                Github
                             </a>
                         </div>
                         <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
                             data-bs-target="#skillsmatrix">Read more..</a>
                     </div>
                 </div>
-            </div>
-            <div class=" d-lg-flex mb-5 " id="moreproject">
-                <div class="col-lg-5 project-img" data-aos="zoom-in-right">
-                    <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#careercity"
-                        src="./assets/work/careercity.png" alt="careercity screenshot">
-                </div>
-                <div class="col-lg-7 project-text" data-aos="fade-up">
-                    <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none" data-bs-toggle="modal"
-                        data-bs-target="#careercity">Career City</a>
-                    <p class="mt-2">The app was implemented to efficiently track real-time attendance, providing an
-                        accurate count of
-                        employees present in each department throughout the day.
-                    </p>
-                    <span>Java</span>
-                    <span>SpringBoot</span>
-                    <span>MySQL</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>GCP</span>
-                    <div class="mt-3 d-flex justify-content-between">
-                        <div>
-                            <a class="text-decoration-none text-light" href="https://github.com/vanmercado/careercity"
-                                target="_blank">
-                                <button class="btn btn-sm btn-secondary">Github</button>
-                            </a>
+                <!-- Modal 5 -->
+                <div class="modal fade" id="skillsmatrix" tabindex="-1" aria-labelledby="Skills" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3 ps-3" id="Skills">Skills Matrix</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-3">
+                                <p>About</p>
+                                <p>
+                                    The Skills Matrix was used to monitor their skill level
+                                    depending on the technologies they were working on and see
+                                    what would be needed to improve their specific skill or the
+                                    technologies they were using. From the team leader to the
+                                    supervisor, they have the ability to approve the skill level
+                                    that the team member submitted, and from there, they can
+                                    keep track of what skill the team is lacking.
+                                </p>
+                                <p>Github:</p>
+                                <p><a href="https://github.com/vanmercado/skillsmatrix" target="_blank"
+                                        class="text-dark ms-4">https://github.com/vanmercado/skillsmatrix</a></p>
+                                <p>Tools:</p>
+                                <ul class="pl-5">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Material UI</li>
+                                    <li>Bootstrap</li>
+                                    <li>React</li>
+                                    <li>Redux</li>
+                                    <li>CRUD Operation</li>
+                                    <li>Express</li>
+                                    <li>MySQL</li>
+                                    <li>Google Cloud Platform</li>
+                                </ul>
+                                <p>Features:</p>
+                                <p>Admin</p>
+                                <ul class="pl-5">
+                                    <li>Monitor team members skills profile</li>
+                                    <li>
+                                        Ability to approve submitted skills level of team member
+                                    </li>
+                                    <li>Can track team performance</li>
+                                </ul>
+                                <p>Member</p>
+                                <ul class="pl-5">
+                                    <li>Monitor own profile</li>
+                                    <li>Add skills s or technologies</li>
+                                    <li>Edit skills s or technologies</li>
+                                    <li>Delete skills s or technologies</li>
+                                    <li>
+                                        Rate the proficiency level depending on the specific skill
+                                        or technology
+                                    </li>
+                                </ul>
+                                <hr>
+                                <p>
+                                    <b>*Apologies for the lack of preview due to my previous
+                                        company's restriction.</b>
+                                </p>
+                                <img src="./assets/screenshot/skillsmatrix.png" alt="skillsmatrix screenshot photo"
+                                    class="w-100">
+                            </div>
                         </div>
-                        <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
-                            data-bs-target="#careercity">Read more..</a>
                     </div>
                 </div>
-            </div>
-            <div class="project-box">
-                <div class=" d-lg-flex mb-5 ">
+                <!-- End Modal 5 -->
+            </li>
+            <li class="list-group-item project-box border-0" id="moreproject">
+                <div class="d-lg-flex mb-5">
                     <div class="col-lg-5 project-img" data-aos="zoom-in-right">
-                        <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#springboot"
-                            src="./assets/work/springboot.png" alt="springboot screenshot">
+                        <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#careercity"
+                            src="./assets/work/careercity.png" alt="careercity screenshot">
                     </div>
                     <div class="col-lg-7 project-text" data-aos="fade-up">
                         <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none"
-                            data-bs-toggle="modal" data-bs-target="#springboot">Spring Boot Project</a>
-                        <p class="mt-2">This app offers the convenience of online application and delivery, along with
-                            the
-                            ability to
-                            obtain important documents.
+                            data-bs-toggle="modal" data-bs-target="#careercity">Career City</a>
+                        <p class="mt-2">The app was implemented to efficiently track real-time attendance, providing an
+                            accurate count of
+                            employees present in each department throughout the day.
                         </p>
                         <span>Java</span>
                         <span>SpringBoot</span>
                         <span>MySQL</span>
                         <span>HTML</span>
                         <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span>GCP</span>
                         <div class="mt-3 d-flex justify-content-between">
                             <div>
-                                <a class="text-decoration-none text-light"
-                                    href="https://github.com/vanmercado/springboot_project" target="_blank">
-                                    <button class="btn btn-sm btn-secondary">Github</button>
+                                <a class="text-decoration-none btn btn-sm btn-secondary"
+                                    href="https://github.com/vanmercado/careercity" target="_blank">
+                                    Github
                                 </a>
                             </div>
                             <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
-                                data-bs-target="#springboot">Read more..</a>
+                                data-bs-target="#careercity">Read more..</a>
+                        </div>
+                    </div>
+                    <!-- Modal 6-->
+                    <div class="modal fade" id="careercity" tabindex="-1" aria-labelledby="Career" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3 ps-3" id="Career"> City</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="moCareerdal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-5 pt-3">
+                                    <p>About</p>
+                                    <p>
+                                        This app was used to track how many employees are present in
+                                        each department and, more importantly, for employees to find
+                                        available opportunities in other job positions as they see
+                                        what the role and responsibility of their chosen field are.
+                                    </p>
+                                    <p>Github:</p>
+                                    <p><a href="https://github.com/vanmercado/careercity" target="_blank"
+                                            class="text-dark ms-4">https://github.com/vanmercado/careercity</a></p>
+                                    <p>Tools:</p>
+                                    <ul class="pl-5">
+                                        <li>Java</li>
+                                        <li>SpringBoot</li>
+                                        <li>Maven</li>
+                                        <li>Thymeleaf</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>MySQL</li>
+                                        <li>Apache Tomcat</li>
+                                        <li>Google Cloud Platform</li>
+                                    </ul>
+                                    <hr>
+                                    <p>
+                                        <b>*Apologies for the lack of preview due to my previous
+                                            company's restriction.</b>
+                                    </p>
+                                    <img src="./assets/screenshot/careercity.png" alt="careercity screenshot photo"
+                                        class="w-100">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-box">
+                <!-- End Modal 6 -->
+            </li>
+            <li class="list-group-item project-box border-0">
+                <div class="d-lg-flex mb-5">
+                    <div class="col-lg-5 project-img" data-aos="zoom-in-right">
+                        <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#filipinocuisine"
+                            src="./assets/work/filipinocuisine.png" alt="filipinocuisine screenshot">
+                    </div>
+
+                    <div class="col-lg-7 project-text" data-aos="fade-up">
+                        <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none"
+                            data-bs-toggle="modal" data-bs-target="#filipinocuisine">Filipino Cuisine</a>
+                        <p class="mt-2">A selection of some of the best Filipino dishes showcases the vibrant flavors of
+                            the
+                            Philippines.
+                        </p>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <div class="mt-3 d-flex justify-content-between">
+                            <div>
+                                <a class="text-decoration-none btn btn-sm btn-secondary"
+                                    href="https://vanmercado.github.io/pinoy_food/" target="_blank">
+                                    Live
+                                </a>
+                                <a class="text-decoration-none btn btn-sm btn-secondary ms-2"
+                                    href="https://github.com/vanmercado/pinoy_food" target="_blank">
+                                    Github
+                                </a>
+                            </div>
+                            <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold" data-bs-toggle="modal"
+                                data-bs-target="#filipinocuisine">Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal 7 -->
+                <div class="modal fade" id="filipinocuisine" tabindex="-1" aria-labelledby="exampleModalLabels"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3 ps-3" id="exampleModalLabels"> Filipino Cuisine</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-3">
+                                <p>About</p>
+                                <p>A selection of some of the best Filipino dishes showcases the vibrant flavors of
+                                    the
+                                    Philippines.
+                                </p>
+                                <p>Github:</p>
+                                <p><a href=" https://github.com/vanmercado/pinoy_food" target="_blank"
+                                        class="text-dark ms-4">https://github.com/vanmercado/pinoy_food</a></p>
+                                <p>Tools:</p>
+                                <ul class="pl-5">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <p>Features:</p>
+                                <ul class="pl-5">
+                                    <li>Add Favorite Pinoy Dishes</li>
+                                    <li>Select and Rank added food</li>
+                                    <li>Mobile Responsive</li>
+                                </ul>
+                                <a class="text-decoration-none btn btn-primary mt-2"
+                                    href="https://vanmercado.github.io/pinoy_food/" target="_blank">
+                                    LIVE
+                                </a>
+                                <hr>
+                                <img src="./assets/screenshot/pinoydish.png" alt="pinoydishes screenshot photo"
+                                    class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/addpinoydish.png" alt="pinoydishes screenshot photo"
+                                    class="w-100">
+                                <hr>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal 7 -->
+            </li>
+            <li class="list-group-item project-box border-0">
                 <div class="d-lg-flex mb-5">
                     <div class="col-lg-5 project-img" data-aos="zoom-in-right">
                         <img class="col-6 col-lg-8 rounded" data-bs-toggle="modal" data-bs-target="#solidwaste"
@@ -240,7 +697,8 @@
                     <div class="col-lg-7 project-text" data-aos="fade-up">
                         <a href="#" class="btnModal pe-auto fs-5 fw-semibold text-decoration-none"
                             data-bs-toggle="modal" data-bs-target="#solidwaste">Solid Waste Management</a>
-                        <p class="mt-2">Effective solid waste management is essential for protecting the environment,
+                        <p class="mt-2">Effective solid waste management is essential for protecting the
+                            environment,
                             conserving
                             resources, and ensuring cleaner, healthier communities for future generations
                         </p>
@@ -254,13 +712,13 @@
                             <span>Redux</span>
                             <div class="mt-3 d-flex justify-content-between">
                                 <div>
-                                    <a class="text-decoration-none text-light"
+                                    <a class="text-decoration-none btn btn-sm btn-secondary"
                                         href="https://vanarden-waste-management.netlify.app/" target="_blank">
-                                        <button class="btn btn-sm btn-secondary">Live</button>
+                                        Live
                                     </a>
-                                    <a class="text-decoration-none text-light ms-2"
+                                    <a class="text-decoration-none btn btn-sm btn-secondary ms-2"
                                         href="https://github.com/vanmercado/wastemanagement" target="_blank">
-                                        <button class="btn btn-sm btn-secondary">Github</button>
+                                        Github
                                     </a>
                                 </div>
                                 <a href="#" class="btnModal pe-auto text-decoration-none fw-semibold"
@@ -269,459 +727,173 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="mt-5 text-center">
-                <a href="#moreproject" id="loadMoreBtn">Load More</a>
-            </div>
+                <!-- Modal 8-->
+                <div class="modal fade" id="solidwaste" tabindex="-1" aria-labelledby="Solid" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3 ps-3" id="Solid">Solid Waste Management</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-3">
+                                <p>About</p>
+                                <p>
+                                    Effective solid waste management is essential for protecting the environment,
+                                    conserving
+                                    resources, and ensuring cleaner, healthier communities for future generations.
+                                </p>
+                                <p>Github:</p>
+                                <p><a href="https://github.com/vanmercado/wastemanagement" target="_blank"
+                                        class="text-dark ms-4">https://github.com/vanmercado/wastemanagement</a></p>
+                                <p>Tools:</p>
+                                <ul class="pl-5">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>React</li>
+                                    <li>Redux</li>
+                                    <li>CRUD Operation</li>
+                                    <li>Express</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                                <p>Features:</p>
+                                <p>For Waste Disposer</p>
+                                <ul class="pl-5">
+                                    <li>Register / Sign-in</li>
+                                    <li>Post an Event where they need a recycler to collect</li>
+                                </ul>
+                                <p>For Recycler</p>
+                                <ul class="pl-5">
+                                    <li>Register / Sign-in</li>
+                                    <li>Claim to collect the waste posted by disposers</li>
+                                </ul>
+                                <a class="text-decoration-none btn btn-primary mt-2"
+                                    href="https://vanarden-waste-management.netlify.app/" target="_blank">
+                                    LIVE
+                                </a>
+                                <hr>
+                                <img src="./assets/screenshot/wasteOne.png" alt="wastemanagement screenshot photo"
+                                    class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/wasteTwo.png" alt="wastemanagement screenshot photo"
+                                    class="w-100">
+                                <hr>
+                                <br>
+                                <hr>
+                                <img src="./assets/screenshot/wasteThree.png" alt="wastemanagement screenshot photo"
+                                    class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal 8 -->
+            </li>
+        </ul>
+        <div class="mt-5 text-center">
+            <a href="#moreproject" id="loadMoreBtn" class="loadMoreButton">Load More</a>
         </div>
     </section>
-    <!-- Modal 1 -->
-    <div class="modal fade" id="filipinocuisine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-3 ps-3" id="exampleModalLabel"> Filipino Cuisine</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5 pt-3">
-                    <p>About</p>
-                    <p>A selection of some of the best Filipino dishes showcases the vibrant flavors of the Philippines.
-                    </p>
-                    <p>Github:</p>
-                    <p><a href=" https://github.com/vanmercado/pinoy_food" target="_blank"
-                            class="text-dark ms-4">https://github.com/vanmercado/pinoy_food</a></p>
-                    <p>Tools:</p>
-                    <ul class="pl-5">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                    <p>Features:</p>
-                    <ul class="pl-5">
-                        <li>Add Favorite Pinoy Dishes</li>
-                        <li>Select and Rank added food</li>
-                        <li>Mobile Responsive</li>
-                    </ul>
-                    <a class="text-decoration-none text-light" href="https://vanmercado.github.io/pinoy_food/"
-                        target="_blank">
-                        <button class="btn btn-primary">LIVE</button>
-                    </a>
-                    <hr />
-                    <img src="./assets/screenshot/pinoydish.png" alt="pinoydishes screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/addpinoydish.png" alt="pinoydishes screenshot photo" class="w-100" />
-                    <hr />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal 1 -->
-    <!-- Modal 2 -->
-    <div class="modal fade" id="skillsmatrix" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-3 ps-3" id="exampleModalLabel">Skills Matrix</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5 pt-3">
-                    <p>About</p>
-                    <p>
-                        The Skills Matrix was used to monitor their skill level
-                        depending on the technologies they were working on and see
-                        what would be needed to improve their specific skill or the
-                        technologies they were using. From the team leader to the
-                        supervisor, they have the ability to approve the skill level
-                        that the team member submitted, and from there, they can
-                        keep track of what skill the team is lacking.
-                    </p>
-                    <p>Github:</p>
-                    <p><a href="https://github.com/vanmercado/skillsmatrix" target="_blank"
-                            class="text-dark ms-4">https://github.com/vanmercado/skillsmatrix</a></p>
-                    <p>Tools:</p>
-                    <ul class="pl-5">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Material UI</li>
-                        <li>Bootstrap</li>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>CRUD Operation</li>
-                        <li>Express</li>
-                        <li>MySQL</li>
-                        <li>Google Cloud Platform</li>
-                    </ul>
-                    <p>Features:</p>
-                    <p>Admin</p>
-                    <ul class="pl-5">
-                        <li>Monitor team members skills profile</li>
-                        <li>
-                            Ability to approve submitted skills level of team member
-                        </li>
-                        <li>Can track team performance</li>
-                    </ul>
-                    <p>Member</p>
-                    <ul class="pl-5">
-                        <li>Monitor own profile</li>
-                        <li>Add skills s or technologies</li>
-                        <li>Edit skills s or technologies</li>
-                        <li>Delete skills s or technologies</li>
-                        <li>
-                            Rate the proficiency level depending on the specific skill
-                            or technology
-                        </li>
-                    </ul>
-                    <hr />
-                    <p>
-                        <b>*Apologies for the lack of preview due to my previous
-                            company's restriction.</b>
-                    </p>
-                    <img src="./assets/screenshot/skillsmatrix.png" alt="skillsmatrix screenshot photo" class="w-100" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal 2 -->
-    <!-- Modal 3-->
-    <div class="modal fade" id="careercity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-3 ps-3" id="exampleModalLabel">Career City</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5 pt-3">
-                    <p>About</p>
-                    <p>
-                        This app was used to track how many employees are present in
-                        each department and, more importantly, for employees to find
-                        available opportunities in other job positions as they see
-                        what the role and responsibility of their chosen field are.
-                    </p>
-                    <p>Github:</p>
-                    <p><a href="https://github.com/vanmercado/careercity" target="_blank"
-                            class="text-dark ms-4">https://github.com/vanmercado/careercity</a></p>
-                    <p>Tools:</p>
-                    <ul class="pl-5">
-                        <li>Java</li>
-                        <li>SpringBoot</li>
-                        <li>Maven</li>
-                        <li>Thymeleaf</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>MySQL</li>
-                        <li>Apache Tomcat</li>
-                        <li>Google Cloud Platform</li>
-                    </ul>
-                    <hr />
-                    <p>
-                        <b>*Apologies for the lack of preview due to my previous
-                            company's restriction.</b>
-                    </p>
-                    <img src="./assets/screenshot/careercity.png" alt="careercity screenshot photo" class="w-100" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal 3 -->
-    <!-- Modal 4-->
-    <div class="modal fade" id="springboot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-3 ps-3" id="exampleModalLabel">Spring Boot Project</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5 pt-3">
-                    <p>About</p>
-                    <p>
-                        With the convenience of online application and delivery, obtaining essential documents like
-                        birth and marriage certificates, as well as CENOMAR, has never been easier, saving time and
-                        ensuring secure, hassle-free access to these important records
-                    </p>
-                    <p>Github:</p>
-                    <p><a href="https://github.com/vanmercado/springboot_project" target="_blank"
-                            class="text-dark ms-4">https://github.com/vanmercado/springboot_project</a></p>
-                    <p>Tools:</p>
-                    <ul class="pl-5">
-                        <li>Java</li>
-                        <li>SpringBoot</li>
-                        <li>MySQL</li>
-                        <li>Thymeleaf</li>
-                        <li>Bootstrap</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <p>Features:</p>
-                    <p>User</p>
-                    <ul class="pl-5">
-                        <li>Register / Sign-in</li>
-                        <li>Order Selected Certificate</li>
-                        <li>View User Profile</li>
-                    </ul>
-                    <p>Admin</p>
-                    <ul class="pl-5">
-                        <li>View Admin Profile</li>
-                        <li>View Admin Dashboard</li>
-                        <li>Edit Registered Users</li>
-                        <li>Delete Registered Users</li>
-                        <li>Search for Registered Users</li>
-                    </ul>
-                    <hr />
-                    <img src="./assets/screenshot/springboot1.png" alt="springboot1 screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/springboot2.png" alt="springboot2 screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/springboot3.png" alt="springboot3 screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/springboot4.png" alt="springboot4 screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/springboot5.png" alt="springboot5 screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/springboot6.png" alt="springboot6 screenshot photo" class="w-100" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal 4 -->
-    <!-- Modal 5-->
-    <div class="modal fade" id="solidwaste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-3 ps-3" id="exampleModalLabel">Solid Waste Management</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5 pt-3">
-                    <p>About</p>
-                    <p>
-                        Effective solid waste management is essential for protecting the environment, conserving
-                        resources, and ensuring cleaner, healthier communities for future generations.
-                    </p>
-                    <p>Github:</p>
-                    <p><a href="https://github.com/vanmercado/wastemanagement" target="_blank"
-                            class="text-dark ms-4">https://github.com/vanmercado/wastemanagement</a></p>
-                    <p>Tools:</p>
-                    <ul class="pl-5">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>CRUD Operation</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                    </ul>
-                    <p>Features:</p>
-                    <p>For Waste Disposer</p>
-                    <ul class="pl-5">
-                        <li>Register / Sign-in</li>
-                        <li>Post an Event where they need a recycler to collect</li>
-                    </ul>
-                    <p>For Recycler</p>
-                    <ul class="pl-5">
-                        <li>Register / Sign-in</li>
-                        <li>Claim to collect the waste posted by disposers</li>
-                    </ul>
-                    <a class="text-decoration-none text-light" href="https://vanarden-waste-management.netlify.app/"
-                        target="_blank">
-                        <button class="btn btn-primary">LIVE</button>
-                    </a>
-                    <hr />
-                    <img src="./assets/screenshot/wasteOne.png" alt="wastemanagement screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/wasteTwo.png" alt="wastemanagement screenshot photo" class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/wasteThree.png" alt="wastemanagement screenshot photo"
-                        class="w-100" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal 5 -->
-    <!-- Modal 6-->
-    <div class="modal fade" id="rendezvous" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-3 ps-3" id="exampleModalLabel">Rendezvous</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5 pt-3">
-                    <p>About</p>
-                    <p>
-                        They are the perfect places to unwind—whether you’re meeting friends, hosting a casual business
-                        meeting, or simply enjoying some peaceful alone time. Their menus feature a delectable selection
-                        of dishes, ranging from hearty meals to light snacks, complemented by an impressive array of
-                        coffee and beverage options. With elegant decor and meticulous attention to detail, places like
-                        these provide an inviting space that perfectly balances comfort and sophistication, ensuring
-                        every visit is a memorable experience.
-                    </p>
-                    <p>Github:</p>
-                    <p><a href="https://github.com/vanmercado/rendezvous" target="_blank"
-                            class="text-dark ms-4">https://github.com/vanmercado/rendezvous</a></p>
-                    <p>Tools:</p>
-                    <ul class="pl-5">
-                        <li>WordPress</li>
-                        <li>Elementor</li>
 
-                    </ul>
-                    <p>Features:</p>
-                    <ul class="pl-5">
-                        <li>Photo Gallery</li>
-                        <li>Mobile Responsive</li>
-                    </ul>
-                    <a class="text-decoration-none text-light" href="https://vanmercado.github.io/rendezvous/"
-                        target="_blank">
-                        <button class="btn btn-primary">LIVE</button>
-                    </a>
-                    <hr />
-                    <img src="./assets/screenshot/rendezvous-home.png" alt="rendezvous screenshot photo"
-                        class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/rendezvous-cafe.png" alt="rendezvous screenshot photo"
-                        class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/rendezvous-testimonial.png" alt="rendezvous screenshot photo"
-                        class="w-100" />
-                    <hr />
-                    <br />
-                    <hr />
-                    <img src="./assets/screenshot/rendezvous-contact.png" alt="rendezvous screenshot photo"
-                        class="w-100" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal 6 -->
     <section id="experience">
-        <div class=" container col-md-11 col-lg-9 col-11">
-            <div>
-                <p class="text-center text-secondary mb-1">Explore My</p>
-                <h2 class="text-center mb-5 fw-bold title">Experience</h2>
+        <div class=" experiences container col-md-11 col-lg-9 col-11 p-0">
+            <p class="text-center text-secondary m-0">Explore My</p>
+            <h2 class="text-center mb-5 mt-1 fw-bold title">Experience</h2>
+            <div class="sub-title">
+                <h2>Programming Skills</h2>
             </div>
-            <div>
-                <div class="sub-title">
-                    <h2>Programming Skills</h2>
-                </div>
-                <div class="d-block d-lg-flex justify-content-between">
-                    <div class="col-lg-6 pe-5">
-                        <div>
-                            <div>
-                                <div class="subject">HTML</div>
-                                <div class="progress-bar" value="54%">
-                                    <div class="progress-line ht " style="max-width: 85%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">CSS</div>
-                                <div class="progress-bar" value="85%">
-                                    <div class="progress-line ht" style="max-width: 80%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">JavaScript</div>
-                                <div class="progress-bar" value="88%">
-                                    <div class="progress-line" style="max-width: 65%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">React</div>
-                                <div class="progress-bar" value="68%">
-                                    <div class="progress-line" style="max-width: 75%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">Wordpress</div>
-                                <div class="progress-bar" value="63%">
-                                    <div class="progress-line" style="max-width: 70%"></div>
-                                </div>
-                            </div>
+            <div class="d-block d-lg-flex justify-content-between">
+                <ul class="col-lg-6 pe-5 p-0 m-0">
+                    <li class="list-group-item">
+                        <p class="subject">HTML</p>
+                        <div class="progress-bar">
+                            <div class="progress-line ht " style="max-width: 90%"></div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 pe-5">
-                        <div>
-                            <div>
-                                <div class="subject">MySQL</div>
-                                <div class="progress-bar" value="82%">
-                                    <div class="progress-line" style="max-width: 70%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">Node.js</div>
-                                <div class="progress-bar" value="74%">
-                                    <div class="progress-line" style="max-width: 65%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">Java</div>
-                                <div class="progress-bar" value="63%">
-                                    <div class="progress-line" style="max-width: 35%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">Google Cloud Platform</div>
-                                <div class="progress-bar" value="91%">
-                                    <div class="progress-line" style="max-width: 45%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="subject">Git</div>
-                                <div class="progress-bar" value="82%">
-                                    <div class="progress-line" style="max-width: 70%"></div>
-                                </div>
-                            </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">CSS</p>
+                        <div class="progress-bar">
+                            <div class="progress-line ht" style="max-width: 85%"></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <p class="text-center text-secondary mb-1">Get To Know More</p>
-            <h2 class="text-center fw-bold title mb-5">About Me</h2>
-            <div class=" col-md-12 col-lg-8 col-11 container">
-                <div class="about-p">
-                    <p>I’m a full-stack developer with an enthusiasm for learning and applying new technologies to
-                        create impactful web applications. Skilled in both front-end and back-end development, I work to
-                        build responsive interfaces and efficient server-side functionality. I enjoy collaborating with
-                        teams and am motivated by the challenge of solving problems creatively while continuously
-                        expanding my skill set. My goal is to grow as a developer by applying best practices, refining
-                        my code, and contributing to projects that improve user experiences and deliver value.</p>
-                </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">JavaScript</p>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="max-width: 65%"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">React</p>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="max-width: 75%"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">Wordpress</p>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="max-width: 70%"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="col-lg-6 pe-5 p-0 m-0">
+                    <li class="list-group-item">
+                        <p class="subject">MySQL</p>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="max-width: 70%"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">Node.js</p>
+                        <div class="progress-bar">
+                            <div class=" progress-line" style="max-width: 65%"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">Java</p>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="max-width: 35%"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">Google Cloud Platform</p>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="max-width: 45%"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="subject">Git</p>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="max-width: 70%"></div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
-            <p class="text-center text-secondary mb-1">Get In Touch</p>
-            <h2 class="text-center fw-bold title mb-5">Contact Me</h2>
+
+    <section id="about" class="about-section">
+        <div class="container p-0">
+            <p class="text-center text-secondary m-0">Get To Know More</p>
+            <h2 class="text-center fw-bold title mb-5 mt-1">About Me</h2>
+            <div class=" col-md-12 col-lg-8 col-11 container p-0">
+                <p class="about-p m-0">I’m a full-stack developer with an enthusiasm for learning and applying new
+                    technologies to
+                    create impactful web applications. Skilled in both front-end and back-end development, I work to
+                    build responsive interfaces and efficient server-side functionality. I enjoy collaborating with
+                    teams and am motivated by the challenge of solving problems creatively while continuously
+                    expanding my skill set. My goal is to grow as a developer by applying best practices, refining
+                    my code, and contributing to projects that improve user experiences and deliver value.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contacts">
+        <div class="container p-0">
+            <p class="text-center text-secondary m-0">Get In Touch</p>
+            <h2 class="text-center fw-bold title mb-5 mt-1">Contact Me</h2>
             <div class="contact-info-container col-md-8 col-lg-6 col-xl-5">
                 <div class="contact-info">
                     <i class="fa-solid fa-envelope">
@@ -737,28 +909,27 @@
             </div>
         </div>
     </section>
-    <footer class="container col-9">
-        <hr />
-        <div class="mb-2 ">
-            <div class="d-flex justify-content-between">
-                <p class="text-secondary">© 2024</p>
-                <div class="footer-icon">
-                    <a href="mailto:vanardenmercado@gmail.com" target="_blank" class="text-decoration-none">
-                        <img class="small-icon me-1" src="./assets/icon/gmails.png" alt="gmail small icon" />
-                    </a>
-                    <a href="https://github.com/vanmercado" target="_blank" class="text-decoration-none">
-                        <img class="small-icon me-1" src="./assets/icon/githubs.png" alt="github small icon" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/van-mercado-782a37121/" target="_blank"
-                        class="text-decoration-none">
-                        <img class="small-icon me-1" src="./assets/icon/linkedin.png" alt="linkedin small icon" />
-                    </a>
-                </div>
+
+    <footer class="container col-9 p-0">
+        <hr>
+        <div class="d-flex justify-content-between">
+            <p class="text-secondary">© 2025</p>
+            <div class="footer-icon">
+                <a href="mailto:vanardenmercado@gmail.com" target="_blank" class="text-decoration-none">
+                    <img class="small-icon me-1" src="./assets/icon/gmails.png" alt="gmail small icon">
+                </a>
+                <a href="https://github.com/vanmercado" target="_blank" class="text-decoration-none">
+                    <img class="small-icon me-1" src="./assets/icon/githubs.png" alt="github small icon">
+                </a>
+                <a href="https://www.linkedin.com/in/van-mercado-782a37121/" target="_blank"
+                    class="text-decoration-none">
+                    <img class="small-icon me-1" src="./assets/icon/linkedin.png" alt="linkedin small icon">
+                </a>
             </div>
         </div>
     </footer>
 
-    <a href="#" class="to-top"><img class="uparrow-icon" src="./assets/icon/up-arrow.png" alt="up arrow icon" /></a>
+    <a href="#" class="to-top"><img class="uparrow-icon" src="./assets/icon/up-arrow.png" alt="up arrow icon"></a>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
